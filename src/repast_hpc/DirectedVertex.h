@@ -112,7 +112,7 @@ DirectedVertex<V,E>::~DirectedVertex(){
 template<typename V, typename E>
 boost::shared_ptr<E> DirectedVertex<V,E>::removeEdge(Vertex<V,E>* other, EdgeType type) {
 	return Vertex<V,E>::removeEdge(other, (type == Vertex<V,E>::INCOMING ? incoming : outgoing));
-}
+} 
 
 template<typename V, typename E>
 boost::shared_ptr<E> DirectedVertex<V,E>::findEdge(Vertex<V,E>* other, EdgeType type) {
@@ -130,18 +130,18 @@ void DirectedVertex<V,E>::addEdge(Vertex<V,E>* other, boost::shared_ptr<E> edge,
 
 template<typename V, typename E>
 void DirectedVertex<V,E>::successors(std::vector<V*>& out) {
-	getItems(outgoing, out);
+	this->getItems(outgoing, out);
 }
 
 template<typename V, typename E>
 void DirectedVertex<V,E>::predecessors(std::vector<V*>& out) {
-	getItems(incoming, out);
+	this->getItems(incoming, out);
 }
 
 template<typename V, typename E>
 void DirectedVertex<V,E>::adjacent(std::vector<V*>& out) {
-	getItems(incoming, out);
-	getItems(outgoing, out);
+	this->getItems(incoming, out);
+	this->getItems(outgoing, out);
 }
 
 template<typename V, typename E>

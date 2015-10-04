@@ -23,7 +23,7 @@ ZOMBIE_DIR=../src/zombies
 HZOMBIE_DIR=../src/hzombies
 
 # DERIVED VARIABLES (Do not modify)
-I_REPAST=-I$(REPAST_HPC_DIR)
+I_REPAST=-I$(REPAST_HPC_DIR) -lz
 I_BOOST=-I$(BOOST_INCLUDE_DIR)
 L_BOOST=-L$(BOOST_LIB_DIR)
 l_BOOST=-lboost_mpi$(BOOST_INFIX) -lboost_serialization$(BOOST_INFIX) -lboost_system$(BOOST_INFIX) -lboost_filesystem$(BOOST_INFIX)

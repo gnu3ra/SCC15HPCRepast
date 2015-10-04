@@ -25,7 +25,7 @@ then
   fi 
   tar -xvf curl-7.32.0.tar.gz
   cd curl-7.32.0
-  ./configure --prefix=$BASE_DIR/CURL
+  ./configure --without-ssl --prefix=$BASE_DIR/CURL
   make
   make install
   cd ..

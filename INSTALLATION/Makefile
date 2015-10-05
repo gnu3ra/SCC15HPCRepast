@@ -187,7 +187,7 @@ distclean: clean
 
 # Object files are built from cpp files
 %.o:
-	$(CXX) -c $(I_BOOST) $(I_NETCDF) $(I_CURL) $(I_HDF5) -I$(SRC_DIR) -o $@ $*.cpp
+	$(CXX) -c $(I_BOOST) $(I_NETCDF) $(I_CURL) $(I_HDF5) -I$(SRC_DIR) -lz -o $@ $*.cpp
 	
 # Cancel implicit rule for name with no suffix, to avoid confusing output:
 %: %.o

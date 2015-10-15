@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 
 # Note: Currently installs MPICH, NetCDF, NetCDF-CXX, and Boost version 1.54
@@ -87,13 +87,33 @@ then
     fi 
     tar -xvf netcdf-cxx-4.2.tar.gz
     cd netcdf-cxx-4.2
-    env CPPFLAGS=-I$BASE_DIR/NetCDF/include LDFLAGS=-L$BASE_DIR/NetCDF/lib ./configure --prefix=$BASE_DIR/NetCDF
+    env CPPFLAGS=-I$BASE_DIR/NetCDF/include LDFLAGS=-L$BASE_DIR/NetCDF/lib LIBS=-ldl ./configure --prefix=$BASE_DIR/NetCDF
     make
     make install
     cd ..
   fi
 
 fi
+
+
+
+
+# hdf5
+
+  if [[ $1 == hdf5 ]]
+  then
+    if [ ! -e hdf5-1.8.13.tar.gz  ]
+    then
+      echo "Hdf5 tar file not found; you must download this and put it in this directory to continue."
+      exit
+    fi 
+    tar -xvf hdf5-1.8.13.tar.gz
+    cd hdf5-1.8.13
+    ./configure --prefix=$BASE_DIR/hdf5 --with-default-api-version=v16 --enable-cxx --enable-parallel 
+    make
+    make install
+    cd ..
+  fi
 
 
 # Boost
@@ -124,6 +144,6 @@ fi
 if [[ $1 == *rhpc* ]]
 then
   MPI_COMPILER_INVOCATION=mpicxx
-  make -f Makefile CXX=$MPI_COMPILER_INVOCATION CXXLD="$MPI_COMPILER_INVOCATION -static" BOOST_INCLUDE_DIR=$BASE_DIR/Boost/Boost_1.54/include BOOST_LIB_DIR=$BASE_DIR/Boost/Boost_1.54/lib BOOST_INFIX=-mt-s NETCDF_INCLUDE_DIR=$BASE_DIR/NetCDF/include NETCDF_LIB_DIR=$BASE_DIR/NetCDF/lib CURL_INCLUDE_DIR=$BASE_DIR/CURL/include CURL_LIB_DIR=$BASE_DIR/CURL/lib
+  make -f Makefile CXX=$MPI_COMPILER_INVOCATION CXXLD="$MPI_COMPILER_INVOCATION -static" CPPFLAGS="-fpermissive" BOOST_INCLUDE_DIR=$BASE_DIR/Boost/Boost_1.54/include BOOST_LIB_DIR=$BASE_DIR/Boost/Boost_1.54/lib BOOST_INFIX=-mt-s NETCDF_INCLUDE_DIR=$BASE_DIR/NetCDF/include NETCDF_LIB_DIR=$BASE_DIR/NetCDF/lib CURL_INCLUDE_DIR=$BASE_DIR/CURL/include CURL_LIB_DIR=$BASE_DIR/CURL/lib HDF5_LIB_DIR=$PWD/hdf5-1.8.13/hdf5/lib HDF5_INCLUDE_DIR=$PWD/hdf5-1.8.13/hdf5/include hzombie_model
 fi
 

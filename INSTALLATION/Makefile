@@ -34,8 +34,8 @@ I_CURL=-I$(CURL_INCLUDE_DIR)
 L_CURL=-L$(CURL_LIB_DIR)
 l_CURL=-lcurl
 I_HDF5=-I$(HDF5_INCLUDE_DIR)
-L_HDF5=-L$(HDF5_LIB_DIR) -L$(Z_LIB_DIR)
-l_HDF5=$(HDF5_LIB_DIR)/libhdf5_hl.a $(HDF5_LIB_DIR)/libhdf5.a -lz
+L_HDF5=-L$(HDF5_LIB_DIR) # -L$(Z_LIB_DIR)
+l_HDF5=$(HDF5_LIB_DIR)/libhdf5_hl.a $(HDF5_LIB_DIR)/libhdf5.a -ldl -lz
 
 
 # SOURCE FILES
@@ -187,7 +187,7 @@ distclean: clean
 
 # Object files are built from cpp files
 %.o:
-	$(CXX) -c $(I_BOOST) $(I_NETCDF) $(I_CURL) $(I_HDF5) -I$(SRC_DIR) -fpermissive -lz -Wl,--no-as-needed -ldl -o $@ $*.cpp
+	$(CXX) -c $(I_BOOST) $(I_NETCDF) $(I_CURL) $(I_HDF5) -I$(SRC_DIR) -fpermissive -lz -Wl,--no-as-needed -l_HDF5 -o $@ $*.cpp
 	
 # Cancel implicit rule for name with no suffix, to avoid confusing output:
 %: %.o

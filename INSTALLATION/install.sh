@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 
 # Note: Currently installs MPICH, NetCDF, NetCDF-CXX, and Boost version 1.54

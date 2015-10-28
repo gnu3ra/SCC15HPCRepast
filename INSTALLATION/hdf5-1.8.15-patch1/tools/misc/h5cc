@@ -26,7 +26,7 @@
 ## then modify them accordingly to represent the new paths.               ##
 ##                                                                        ##
 ############################################################################
-prefix="/home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5"
+prefix="/home/aballmer/new/SCC15HPCRepast/ext/hdf5"
 exec_prefix="${prefix}"
 libdir="${exec_prefix}/lib"
 includedir="${prefix}/include"
@@ -79,8 +79,8 @@ dash_c="no"
 get_output_file="no"
 
 SHOW="eval"
-CCBASE="gcc"
-CLINKERBASE="gcc"
+CCBASE="mpicc"
+CLINKERBASE="mpicc"
 
 # CFLAGS, CPPFLAGS and LDFLAGS are reserved for use by the script user.
 # FLAGS brought from the hdf5 build are put in H5BLD_*FLAGS.

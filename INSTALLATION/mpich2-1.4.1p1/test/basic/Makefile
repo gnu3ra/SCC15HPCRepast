@@ -6,9 +6,9 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/basic
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/basic
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/basic
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/basic
 DEFS            = -DHAVE_CONFIG_H -I. -I${srcdir}
 INCLUDES        = 
 LIBS            = -lrt -lpthread  
@@ -16,12 +16,12 @@ MAKE            = make
 CFLAGS          =    -O2 $(MPICH2_MAKE_CFLAGS)
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 C_LINK         = $(CC)
-CC_SHL          = true
+CC_SHL          = gcc -fPIC
 C_COMPILE_SHL   = $(CC_SHL) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 LDFLAGS     =    
 
 VPATH = .
-prefix          = /home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix          = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix     = ${prefix}
 bindir          = ${exec_prefix}/bin
 CC              = $(bindir)/mpicc

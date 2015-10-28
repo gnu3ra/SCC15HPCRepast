@@ -6,12 +6,12 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/errors/f90
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/errors/f90
 bindir          = ${exec_prefix}/bin
 exec_prefix     = ${prefix}
-prefix          = /home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix          = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/errors/f90
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/errors/f90
 MAKE            = make
 
 VPATH = .

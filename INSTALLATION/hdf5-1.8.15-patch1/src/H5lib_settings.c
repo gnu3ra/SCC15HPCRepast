@@ -17,7 +17,7 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Oct 14, 2015
+ * Created:		Oct 25, 2015
  *			aballmer@n00.localdomain
  *
  * Purpose:		This machine-generated source code contains
@@ -38,19 +38,19 @@ char H5libhdf5_settings[]=
 	"General Information:\n"
 	"-------------------\n"
 	"		   HDF5 Version: 1.8.15-patch1\n"
-	"		  Configured on: Wed Oct 14 14:44:51 EDT 2015\n"
+	"		  Configured on: Sun Oct 25 18:51:01 EDT 2015\n"
 	"		  Configured by: aballmer@n00.localdomain\n"
 	"		 Configure mode: production\n"
 	"		    Host system: x86_64-unknown-linux-gnu\n"
 	"	      Uname information: Linux n00.localdomain 3.10.0-229.11.1.el7.x86_64 #1 SMP Thu Aug 6 01:06:18 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n"
 	"		       Byte sex: little-endian\n"
 	"		      Libraries: static, shared\n"
-	"	     Installation point: /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5\n"
+	"	     Installation point: /home/aballmer/new/SCC15HPCRepast/ext/hdf5\n"
 	"\n"
 	"Compiling Options:\n"
 	"------------------\n"
 	"               Compilation Mode: production\n"
-	"                     C Compiler: /usr/bin/gcc ( gcc (GCC) 4.8.3 20140911 )\n"
+	"                     C Compiler: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))\n"
 	"                         CFLAGS: \n"
 	"                      H5_CFLAGS: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Winline -Wfloat-equal -Wmissing-format-attribute -Wmissing-noreturn -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wstrict-overflow -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wsuggest-attribute=const -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wsuggest-attribute=pure -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -O3 -fomit-frame-pointer -finline-functions\n"
 	"                      AM_CFLAGS: \n"
@@ -77,13 +77,13 @@ char H5libhdf5_settings[]=
 	"\n"
 	"Features:\n"
 	"---------\n"
-	"                  Parallel HDF5: no\n"
+	"                  Parallel HDF5: yes\n"
 	"             High Level library: yes\n"
 	"                   Threadsafety: no\n"
 	"            Default API Mapping: v18\n"
 	" With Deprecated Public Symbols: yes\n"
 	"         I/O filters (external): deflate(zlib)\n"
-	"                            MPE: no\n"
+	"                            MPE: \n"
 	"                     Direct VFD: no\n"
 	"                        dmalloc: no\n"
 	"Clear file buffers before write: yes\n"

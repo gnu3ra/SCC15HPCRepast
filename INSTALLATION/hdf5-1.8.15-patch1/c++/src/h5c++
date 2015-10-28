@@ -24,7 +24,7 @@
 ## then modify them accordingly to represent the new paths.               ##
 ##                                                                        ##
 ############################################################################
-prefix="/home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5"
+prefix="/home/aballmer/new/SCC15HPCRepast/ext/hdf5"
 exec_prefix="${prefix}"
 libdir="${exec_prefix}/lib"
 includedir="${prefix}/include"

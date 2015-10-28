@@ -6,9 +6,9 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3
 MAKE            = make
 MPILIBNAME      = mpich
 

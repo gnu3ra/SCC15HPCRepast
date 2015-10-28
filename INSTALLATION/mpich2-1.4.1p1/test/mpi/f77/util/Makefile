@@ -6,11 +6,11 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/util
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/util
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/util
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/util
 MAKE            = make
-F77             = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpif77
+F77             = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpif77
 FFLAGS          = 
 F77_COMPILE     = $(F77) $(FFLAGS) $(F77INCLUDES)
 

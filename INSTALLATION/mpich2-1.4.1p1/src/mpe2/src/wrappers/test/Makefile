@@ -6,12 +6,12 @@ MAKE                 = make --no-print-directory
 CPP                  = gcc -E
 CC                   = gcc
 CLINKER              = gcc
-MPI_CC               = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc
-MPI_F77              = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77
+MPI_CC               = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc
+MPI_F77              = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77
 MPI_CLINKER          = $(MPI_CC)
 MPI_FLINKER          = $(MPI_F77)
-MPE_CLINKER          = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc -mpe=
-MPE_FLINKER          = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77 -mpe=
+MPE_CLINKER          = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc -mpe=
+MPE_FLINKER          = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77 -mpe=
 #
 DEBUG_LIBS           = 
 MPI_CFLAGS           = 
@@ -19,9 +19,9 @@ MPI_FFLAGS           =
 MPI_LIBS             = 
 CFLAGS               =    -O2
 FFLAGS               = 
-MPE_INCDIR           = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
-MPE_LIBDIR           = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
-MPE_SBINDIR          = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/sbin
+MPE_INCDIR           = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
+MPE_LIBDIR           = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
+MPE_SBINDIR          = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/sbin
 PROF_LIBS            = -L$(MPE_LIBDIR) -lmpe $(MPI_LIBS)
 LOG_LIBS             = -L$(MPE_LIBDIR) -llmpe -lmpe $(MPI_LIBS)
 TRACE_LIBS           = -L$(MPE_LIBDIR) -ltmpe $(MPI_LIBS)

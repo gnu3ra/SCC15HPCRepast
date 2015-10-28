@@ -24,11 +24,11 @@
 # Set the characteristics of the shared library support, determined 
 # by configure
 CC="gcc    -O2"
-C_LINK_SHL="true"
+C_LINK_SHL="${CC} -shared"
 SHLIB_EXT="so"
 INSTALL="/usr/bin/install -c"
 INSTALL_PROGRAM="${INSTALL}"
-libtype="none"
+libtype="gcc"
 #
 # Set the defaults
 mode=link

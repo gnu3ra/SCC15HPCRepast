@@ -7,25 +7,25 @@ all: all-redirect
 
 SHELL           = /bin/sh
 LIBTOOL         = 
-CREATESHLIB     = false
+CREATESHLIB     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/createshlib
 ABIVERSION      = 3:3
 LIBS            = -lrt -lpthread  
 LDFLAGS         =  
-C_LINK_SHL      = true
+C_LINK_SHL      = ${CC} -shared
 INSTALL         = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT  = ${INSTALL}
 INSTALL_DATA    = ${INSTALL} -m 644
 MKDIR_P         = mkdir -p
 includedir      = ${prefix}/include
-prefix          = /home/aballmer/SCC15HPCRepast/ext//MPICH
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+prefix          = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 exec_prefix     = ${prefix}
 libdir          = ${exec_prefix}/lib
-master_top_srcdir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+master_top_srcdir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 srcdir          = .
 bindir          = ${exec_prefix}/bin
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 
 datarootdir     = ${prefix}/share
 docdir          = ${datarootdir}/doc/${PACKAGE}
@@ -80,7 +80,7 @@ all-redirect: all-preamble
 		if ( cd $$dir && ${MAKE} all ) ; then : ; else exit 1; fi \
 	done
 	@(cd src && ${MAKE} all )
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 	    if [ -s lib/lib${MPILIBNAME}.la ] ; then \
 	        echo "make lib/lib${MPILIBNAME}.so" ;\
 	        ${MAKE} lib/lib${MPILIBNAME}.so ; \
@@ -278,7 +278,7 @@ all-local:
 	    echo "c++   -O2" >> lib/pkglist.new ;\
 	    echo "  " >> lib/pkglist.new ;\
 	    echo "  " >> lib/pkglist.new ;\
-	    echo " '--prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH' '--disable-f77' '--disable-fc'" >>lib/pkglist.new ; \
+	    echo " '--prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH' '--enable-shared' '--disable-f77' '--disable-fc'" >>lib/pkglist.new ; \
 	    echo " " >> lib/pkglist.new ;\
 	    if diff lib/pkglist lib/pkglist.new >/dev/null 2>&1 ; then \
 	        rm -f lib/pkglist.new ; \
@@ -320,7 +320,7 @@ cleanlibs:
 
 all-preamble:
 	@echo "Beginning make"
-	@echo "Using variables CC='gcc' CFLAGS='   -O2' LDFLAGS=' ' F77='' FFLAGS=' ' FC='' FCFLAGS=' ' CXX='c++' CXXFLAGS='  -O2' AR='ar' CPP='gcc -E' CPPFLAGS=' -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers'"
+	@echo "Using variables CC='gcc' CFLAGS='   -O2' LDFLAGS=' ' F77='' FFLAGS=' ' FC='' FCFLAGS=' ' CXX='c++' CXXFLAGS='  -O2' AR='ar' CPP='gcc -E' CPPFLAGS=' -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers'"
 
 # Add any final extras:
 #    1) Build the debugger interface if requested
@@ -392,7 +392,7 @@ testing:
 #libf${MPILIBNAME}_so_EXPORTS = maint/fmpi.def
 # Add CXXFLAGS to the linker incase the user has used the CXXFLAGS to 
 # change the architecture (e.g., -m64 to force 64-bit)
-lib${MPICXXLIBNAME}_so_LINKER = false   -O2
+lib${MPICXXLIBNAME}_so_LINKER = c++ -shared -fPIC   -O2
 
 
 
@@ -401,7 +401,7 @@ lib${MPICXXLIBNAME}_so_LINKER = false   -O2
 
 # Install preamble checks for possible problems
 install-preamble:
-	@if [ "none" = none ] ; then\
+	@if [ "gcc" = none ] ; then\
              found=no ; \
 	     for file in ${libdir}/lib*${MPILIBNAME}.so ; do \
                  if [ -f $$file ] ; then \

@@ -1,15 +1,15 @@
 CC          = gcc
 AR          = ar cr
-LIBNAME     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
+LIBNAME     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
 RANLIB      = ranlib
-srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi-io/glue/mpich1
-CC_SHL      = true
-SHLIBNAME   = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
+srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi-io/glue/mpich1
+CC_SHL      = gcc -fPIC
+SHLIBNAME   = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
 
 INCLUDE_DIR = -I. -I../../../include -I${srcdir}/../../../mpi-io -I${srcdir}/../../../adio/include -I../../../adio/include -I${srcdir}/../../../../../../src/include  -I../../../../../../src/include 
-CFLAGS      = -DHAVE_MPI_INFO_SRC  -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(MPIOPROFILE) $(INCLUDE_DIR)
+CFLAGS      = -DHAVE_MPI_INFO_SRC  -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(MPIOPROFILE) $(INCLUDE_DIR)
 
-top_builddir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+top_builddir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 LIBTOOL       = 
 C_COMPILE_SHL = $(CC_SHL)
 
@@ -18,7 +18,7 @@ VPATH=.:${srcdir}
 MPIO_OBJECTS = mpio_file.o mpio_err.o
 
 all: $(LIBNAME)
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 	    $(MAKE) $(SHLIBNAME).la ;\
 	fi
 

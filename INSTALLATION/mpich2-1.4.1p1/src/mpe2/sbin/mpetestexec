@@ -9,7 +9,7 @@ ECHO_C=""
 ECHO_T=""
 RM="rm"
 
-MPE_BINDIR=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
+MPE_BINDIR=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
 
 execbasename=`basename $0`
 MPE_OUTFILE="mpe2_${execbasename}.txt"

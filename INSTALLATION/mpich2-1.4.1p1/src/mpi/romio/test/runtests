@@ -1,5 +1,5 @@
 #! /bin/sh
-mpirun="/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpiexec"
+mpirun="/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpiexec"
 STOPFILE=${MPITEST_STOPTEST:-"$HOME/.stopmpichtests"}
 #
 # If the programs are not available, run make.
@@ -8,7 +8,7 @@ makeeach=0
 check_at_once=1
 quiet=0
 MAKE="make"
-srcdir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/test
+srcdir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/test
 check_canrun=0
 subset_only=0
 FILENAME=test

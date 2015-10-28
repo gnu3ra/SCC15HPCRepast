@@ -4,7 +4,7 @@
 # 
 
 # Define prefix so PATH and MANPATH can be updated.
-setenv        prefix        /home/aballmer/SCC15HPCRepast/ext//MPICH
+setenv        prefix        /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 setenv        exec_prefix   ${prefix}
 prepend-path  PATH          ${exec_prefix}/bin
 prepend-path  MANPATH       ${prefix}/share/man

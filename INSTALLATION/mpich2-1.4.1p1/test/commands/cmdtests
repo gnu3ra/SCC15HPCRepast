@@ -8,7 +8,7 @@
 # mpiexec - environment handling; stdout, stderr redirection
 #
 # Configuration values
-my $prefix      = "/home/aballmer/SCC15HPCRepast/ext//MPICH";
+my $prefix      = "/home/aballmer/new/SCC15HPCRepast/ext//MPICH";
 my $exec_prefix = "${prefix}";
 my $bindir      = "${exec_prefix}/bin";
 my $srcdir      = ".";

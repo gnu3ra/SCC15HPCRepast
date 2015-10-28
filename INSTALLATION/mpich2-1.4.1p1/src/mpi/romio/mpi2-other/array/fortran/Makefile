@@ -1,8 +1,8 @@
 CC          = gcc
 AR          = ar cr
 RANLIB      = ranlib
-LIBNAME     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
-srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi2-other/array/fortran
+LIBNAME     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
+srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi2-other/array/fortran
 
 INCLUDE_DIR = -I. -I../../../include -I${srcdir}/../../../mpi-io -I${srcdir}/../../../adio/include -I../../../adio/include
 CFLAGS      =    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(MPIOPROFILE) $(INCLUDE_DIR)

@@ -16,17 +16,17 @@
 
 # Location of sources
 # top_srcdir=..
-top_srcdir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2       # in absolute path
+top_srcdir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2       # in absolute path
 
 # Build locations
-includebuild_dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
-libbuild_dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
-binbuild_dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
-sbinbuild_dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/sbin
-etcbuild_dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/etc
+includebuild_dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
+libbuild_dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
+binbuild_dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
+sbinbuild_dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/sbin
+etcbuild_dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/etc
 
 # Installation directories: Default paths (set at configure time)
-prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
@@ -106,7 +106,7 @@ for arg in "$@" ; do
     case "$arg" in
         -prefix=*)
             prefix=`echo $arg | sed -e 's/-prefix=//g'` 
-            if [ "$prefix" != "/home/aballmer/SCC15HPCRepast/ext//MPICH" ] ; then
+            if [ "$prefix" != "/home/aballmer/new/SCC15HPCRepast/ext//MPICH" ] ; then
                 prefix_override=1
             fi
             ;;

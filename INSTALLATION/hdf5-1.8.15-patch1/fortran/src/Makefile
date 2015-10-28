@@ -161,9 +161,9 @@ am__libhdf5_fortran_la_SOURCES_DIST = H5f90global.f90 \
 	H5Off$(F_STATUS).f90 H5Pff$(F_STATUS).f90 H5Rff$(F_STATUS).f90 \
 	H5Tff$(F_STATUS).f90 HDF5.f90 H5FDmpiof.c HDF5mpio.f90 \
 	H5FDmpioff.f90
-am__objects_1 = HDF5.lo
-#am__objects_1 = H5FDmpiof.lo \
-#	HDF5mpio.lo H5FDmpioff.lo
+#am__objects_1 = HDF5.lo
+am__objects_1 = H5FDmpiof.lo \
+	HDF5mpio.lo H5FDmpioff.lo
 am_libhdf5_fortran_la_OBJECTS = H5f90global.lo H5fortran_types.lo \
 	H5_ff$(F_STATUS).lo H5_ff.lo H5Aff.lo H5Dff.lo H5Eff.lo \
 	H5Fff.lo H5Gff.lo H5Iff.lo H5Lff.lo H5Off.lo H5Pff.lo H5Rff.lo \
@@ -449,7 +449,7 @@ am__set_b = \
       b='$*';; \
   esac
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing aclocal-1.14
 ADD_PARALLEL_FILES = no
 AMTAR = $${TAR-tar}
 
@@ -470,21 +470,21 @@ AM_FCFLAGS =    -I$(top_srcdir)/src \
 AM_LDFLAGS =   $(am__append_1)
 AM_MAKEFLAGS = 
 AR = ar
-AUTOCONF = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoconf
-AUTOHEADER = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoheader
-AUTOMAKE = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing automake-1.14
+AUTOCONF = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoconf
+AUTOHEADER = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoheader
+AUTOMAKE = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing automake-1.14
 AWK = gawk
 BYTESEX = little-endian
-CC = gcc
+CC = mpicc
 CCDEPMODE = depmode=gcc3
-CC_VERSION = /usr/bin/gcc ( gcc (GCC) 4.8.3 20140911 )
+CC_VERSION = /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
 CFLAGS = 
 CLEARFILEBUF = yes
 CODESTACK = no
-CONFIG_DATE = Wed Oct 14 14:44:51 EDT 2015
+CONFIG_DATE = Sun Oct 25 18:51:01 EDT 2015
 CONFIG_MODE = production
 CONFIG_USER = aballmer@n00.localdomain
-CPP = gcc -E
+CPP = mpicc -E
 CPPFLAGS = 
 CXX = no
 CXXCPP = g++ -E
@@ -517,7 +517,7 @@ FC2003 =
 FCFLAGS = 
 FCFLAGS_f90 = 
 FCLIBS = 
-FC_VERSION = no ( GNU Fortran (GCC) 4.8.3 20140911 )
+FC_VERSION = no ( built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
 FGREP = /usr/bin/grep -F
 FSEARCH_DIRS = 
 GREP = /usr/bin/grep
@@ -560,10 +560,10 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_STATIC_EXEC = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing makeinfo
+MAKEINFO = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
-MPE = no
+MPE = 
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -578,12 +578,12 @@ PACKAGE_STRING = HDF5 1.8.15-patch1
 PACKAGE_TARNAME = hdf5
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.8.15-patch1
-PARALLEL = no
+PARALLEL = yes
 PATH_SEPARATOR = :
 PERL = perl
 RANLIB = ranlib
-ROOT = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
-RUNPARALLEL = 
+ROOT = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+RUNPARALLEL = mpiexec -n $${NPROCS:=6}
 RUNSERIAL = 
 R_INTEGER = 
 R_LARGE = 
@@ -596,9 +596,9 @@ STATIC_EXEC = no
 STATIC_SHARED = static, shared
 STRICT_FORMAT_CHECKS = no
 STRIP = strip
-TESTPARALLEL = 
+TESTPARALLEL = testpar
 THREADSAFE = no
-TIME = 
+TIME = time
 TR = /usr/bin/tr
 TRACE_API = no
 UNAME_INFO = Linux n00.localdomain 3.10.0-229.11.1.el7.x86_64 #1 SMP Thu Aug 6 01:06:18 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
@@ -607,12 +607,12 @@ USE_FILTER_SZIP = no
 USINGMEMCHECKER = no
 VERSION = 1.8.15-patch1
 WORDS_BIGENDIAN = no
-abs_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/src
-abs_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/src
-abs_top_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
-abs_top_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+abs_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/src
+abs_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/src
+abs_top_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+abs_top_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
 ac_ct_AR = 
-ac_ct_CC = gcc
+ac_ct_CC = mpicc
 ac_ct_CXX = 
 ac_ct_DUMPBIN = 
 ac_ct_FC = 
@@ -645,7 +645,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/install-sh
+install_sh = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -654,7 +654,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5
+prefix = /home/aballmer/new/SCC15HPCRepast/ext/hdf5
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -733,10 +733,10 @@ lib_LTLIBRARIES = libhdf5_fortran.la
 
 # Add libtool numbers to the HDF5 Fortran library (from config/lt_vers.am)
 libhdf5_fortran_la_LDFLAGS = -version-info $(LT_VERS_INTERFACE):$(LT_VERS_REVISION):$(LT_VERS_AGE) $(AM_LDFLAGS)
-PARALLEL_COND_SRC = HDF5.f90
+#PARALLEL_COND_SRC = HDF5.f90
 
 # Include HDF5.f90 if parallel is disabled, HDF5mpiof*  if parallel is enabled
-#PARALLEL_COND_SRC = H5FDmpiof.c HDF5mpio.f90 H5FDmpioff.f90
+PARALLEL_COND_SRC = H5FDmpiof.c HDF5mpio.f90 H5FDmpioff.f90
 F_STATUS = _F90
 
 # Check if the compiler supports the Fortran 2003 standard
@@ -776,11 +776,11 @@ DISTCLEANFILES = h5fc
 MOSTLYCLEANFILES = H5fortran_types.f90 H5f90i_gen.h H5fort_type_defines.h \
          H5fortran_detect.f90
 
-H5FC_NAME = h5fc
+#H5FC_NAME = h5fc
 
 # Custom rule for installing h5fc, since it will be named h5pfc if hdf5
 # is configured for parallel mode
-#H5FC_NAME = h5pfc
+H5FC_NAME = h5pfc
 
 # Tell Automake to create H5f90i_gen.h before it builds the library
 # sources.  When it creates H5f90i_gen.h, it will create

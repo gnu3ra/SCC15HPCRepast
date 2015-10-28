@@ -47,7 +47,7 @@ then
   fi 
   tar -xvf mpich2-1.4.1p1.tar.gz
   cd mpich2-1.4.1p1
-  ./configure --prefix=$BASE_DIR/MPICH --disable-f77 --disable-fc
+  ./configure --prefix=$BASE_DIR/MPICH --enable-shared --disable-f77 --disable-fc
   make
   make install
   cd ..
@@ -136,7 +136,7 @@ if [ -e $BASE_DIR/Boost ]
   cd boost_1_54_0
   ./bootstrap.sh --prefix=$BASE_DIR/Boost/Boost_1.54/ --with-libraries=system,filesystem,mpi,serialization
   echo "using mpi : $MPI_COMPILER_INVOCATION ;" >>./tools/build/v2/user-config.jam
-  ./b2 --layout=tagged link=static variant=release threading=multi runtime-link=static stage install
+  ./b2 --layout=tagged variant=release threading=multi stage install
   cd ..
 fi
 
@@ -144,6 +144,6 @@ fi
 if [[ $1 == *rhpc* ]]
 then
   MPI_COMPILER_INVOCATION=mpicxx
-  make -f Makefile CXX=$MPI_COMPILER_INVOCATION CXXLD="$MPI_COMPILER_INVOCATION -static" CPPFLAGS="-fpermissive" BOOST_INCLUDE_DIR=$BASE_DIR/Boost/Boost_1.54/include BOOST_LIB_DIR=$BASE_DIR/Boost/Boost_1.54/lib BOOST_INFIX=-mt-s NETCDF_INCLUDE_DIR=$BASE_DIR/NetCDF/include NETCDF_LIB_DIR=$BASE_DIR/NetCDF/lib CURL_INCLUDE_DIR=$BASE_DIR/CURL/include CURL_LIB_DIR=$BASE_DIR/CURL/lib HDF5_LIB_DIR=$PWD/hdf5-1.8.13/hdf5/lib HDF5_INCLUDE_DIR=$PWD/hdf5-1.8.13/hdf5/include hzombie_model
+  make -f Makefile CXX=$MPI_COMPILER_INVOCATION CXXLD="$MPI_COMPILER_INVOCATION" CPPFLAGS="-fpermissive" BOOST_INCLUDE_DIR=$BASE_DIR/Boost/Boost_1.54/include BOOST_LIB_DIR=$BASE_DIR/Boost/Boost_1.54/lib BOOST_INFIX=-mt-s NETCDF_INCLUDE_DIR=$BASE_DIR/NetCDF/include NETCDF_LIB_DIR=$BASE_DIR/NetCDF/lib CURL_INCLUDE_DIR=$BASE_DIR/CURL/include CURL_LIB_DIR=$BASE_DIR/CURL/lib HDF5_LIB_DIR=$PWD/hdf5-1.8.13/hdf5/lib HDF5_INCLUDE_DIR=$PWD/hdf5-1.8.13/hdf5/include hzombie_model
 fi
 

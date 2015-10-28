@@ -6,14 +6,14 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads/util
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads/util
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads/util
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads/util
 top_srcdir      = ../..
 DEFS            = -DHAVE_CONFIG_H -I. -I${srcdir}
 CPPFLAGS        = 
 MAKE            = make
-CC              = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpicc
+CC              = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpicc
 CFLAGS          =   $(MPICH2_MAKE_CFLAGS)
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 

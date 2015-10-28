@@ -13,7 +13,7 @@
 #ifndef MPICH2INFO_H_INCLUDED
 #define MPICH2INFO_H_INCLUDED
 
-#define MPICH2_CONFIGURE_ARGS_CLEAN "--prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH --disable-f77 --disable-fc"
+#define MPICH2_CONFIGURE_ARGS_CLEAN "--prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH --enable-shared --disable-f77 --disable-fc"
 #define MPICH2_VERSION_DATE "Thu Sep  1 13:53:02 CDT 2011"
 #define MPICH2_DEVICE "ch3:nemesis"
 #define MPICH2_COMPILER_CC "gcc    -O2"

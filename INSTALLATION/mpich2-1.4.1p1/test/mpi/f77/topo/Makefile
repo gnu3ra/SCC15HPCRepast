@@ -6,15 +6,15 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/topo
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/topo
 bindir          = ${exec_prefix}/bin
 exec_prefix     = ${prefix}
-prefix          = /home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix          = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/topo
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f77/topo
 LIBS            = -lpthread 
 MAKE            = make
-F77             = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpif77
+F77             = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpif77
 FFLAGS          = 
 F77_COMPILE     = $(F77) $(FFLAGS) $(F77INCLUDES)
 F77_LINK       = $(F77)

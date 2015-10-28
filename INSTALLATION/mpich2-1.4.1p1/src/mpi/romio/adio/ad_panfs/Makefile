@@ -1,18 +1,18 @@
 CC          = gcc
 AR          = ar cr
 RANLIB      = ranlib
-LIBNAME     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
-srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/adio/ad_panfs
-CC_SHL      = true
-SHLIBNAME   = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
+LIBNAME     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
+srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/adio/ad_panfs
+CC_SHL      = gcc -fPIC
+SHLIBNAME   = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
 
-CPPFLAGS        =  -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers
+CPPFLAGS        =  -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpl/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/openpa/src -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/datatype -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/common/locks -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/include -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpid/ch3/channels/nemesis/nemesis/utils/monitor -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/util/wrappers
 # I don't like this hard-coded path to the PANFS headers but I guess that's
 # where they always are?
 INCLUDES    = -I. -I${srcdir}/../include -I../include -I../../include -I${srcdir}/../../../../include -I../../../../include -I/opt/panfs/include
 CFLAGS      =    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 
 
-top_builddir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+top_builddir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 LIBTOOL       = 
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 C_COMPILE_SHL   = $(CC_SHL) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
@@ -23,7 +23,7 @@ AD_PANFS_OBJECTS = ad_panfs.o ad_panfs_open.o ad_panfs_hints.o ad_panfs_read.o a
 
 
 default: $(LIBNAME)
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 		$(MAKE) $(SHLIBNAME).la ;\
 	fi
 

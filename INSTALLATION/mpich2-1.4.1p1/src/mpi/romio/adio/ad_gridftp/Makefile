@@ -1,15 +1,15 @@
 CC          = gcc
 AR          = ar cr
 RANLIB      = ranlib
-LIBNAME     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
-srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/adio/ad_gridftp
-CC_SHL      = true
-SHLIBNAME   = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
+LIBNAME     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
+srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/adio/ad_gridftp
+CC_SHL      = gcc -fPIC
+SHLIBNAME   = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
 
 INCLUDES    = -I. -I${srcdir}/../include -I../include -I../../include  -I${srcdir}/../../../../include -I../../../../include
 CFLAGS      =    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(INCLUDES)
 
-top_builddir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+top_builddir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 LIBTOOL       = 
 C_COMPILE_SHL = $(CC_SHL) 
 
@@ -22,7 +22,7 @@ AD_GRIDFTP_OBJECTS = ad_gridftp_close.o \
 	ad_gridftp_delete.o ad_gridftp.o globus_routines.o ad_gridftp_features.o
 
 default: $(LIBNAME)
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 	    $(MAKE) $(SHLIBNAME).la ;\
 	fi
 

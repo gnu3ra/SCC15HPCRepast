@@ -6,9 +6,9 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx
 MAKE            = make
 
 VPATH = .
@@ -62,7 +62,7 @@ SOURCEFILES     = $(SOURCES)
 # A special testing target to simplify testing just the C++ code
 testing:
 	../runtests -srcdir=$(srcdir) -tests=testlist \
-		   -mpiexec=/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
+		   -mpiexec=/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
 		   -xmlfile=summary.xml
 
 

@@ -6,21 +6,21 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/attr
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/attr
 bindir          = ${exec_prefix}/bin
 exec_prefix     = ${prefix}
-prefix          = /home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix          = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/attr
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/attr
 DEFS            = -DHAVE_CONFIG_H -I. -I${srcdir}
 INCLUDES        = 
 CPPFLAGS        = 
 LIBS            = -lpthread 
 MAKE            = make
-CC              = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpicc
+CC              = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpicc
 CFLAGS          =   $(MPICH2_MAKE_CFLAGS)
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
-FC               = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpif90
+FC               = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpif90
 FCFLAGS         = 
 FC_COMPILE      = $(FC) $(FCFLAGS) $(FCINCLUDES)
 FC_LINK        = $(FC)

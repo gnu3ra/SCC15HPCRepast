@@ -216,7 +216,7 @@
 /* #undef HAVE_MPI_MULTI_LANG_Info */
 
 /* Define if we have parallel support */
-/* #undef HAVE_PARALLEL */
+#define HAVE_PARALLEL 1
 
 /* Define to 1 if you have the <pthread.h> header file. */
 /* #undef HAVE_PTHREAD_H */

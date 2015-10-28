@@ -138,7 +138,7 @@ old_postuninstall_cmds=""
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="  -fvisibility=hidden   -O2  -I/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/pm/hydra/tools/topo/hwloc/hwloc/include"
+LTCFLAGS="  -fvisibility=hidden   -O2  -I/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/pm/hydra/tools/topo/hwloc/hwloc/include"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p'"
@@ -240,7 +240,7 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64"
+sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64_lin/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin"
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib64/atlas /usr/lib64/dyninst /usr/lib64/iscsi /usr/lib64/mysql "

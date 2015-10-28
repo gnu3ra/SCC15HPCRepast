@@ -10,9 +10,9 @@ top_srcdir        = .
 srcdir            = .
 
 # Build directories
-includebuild_dir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
-libbuild_dir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
-binbuild_dir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
+includebuild_dir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
+libbuild_dir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
+binbuild_dir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
 sbinbuild_dir     = @sbinbuild_dir@
 
 # Building Fortran to C interface

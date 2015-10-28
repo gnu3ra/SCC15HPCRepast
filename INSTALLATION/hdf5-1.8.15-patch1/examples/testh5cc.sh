@@ -32,8 +32,8 @@ EXIT_FAILURE=1
 
 # Where the tool is installed.
 # Note: no '/' after DESTDIR.  Explanation in commence.am
-prefix="${prefix:-${DESTDIR}/home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5}"
-PARALLEL=no		# Am I in parallel mode?
+prefix="${prefix:-${DESTDIR}/home/aballmer/new/SCC15HPCRepast/ext/hdf5}"
+PARALLEL=yes		# Am I in parallel mode?
 AR="ar"
 RANLIB="ranlib"
 if [ "$PARALLEL" = no ]; then

@@ -6,9 +6,9 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi
 MAKE            = make
 
 VPATH = .
@@ -83,13 +83,13 @@ SOURCEFILES     = $(SOURCES)
 
 testing:
 	./runtests -srcdir=$(srcdir) -tests=testlist \
-		   -mpiexec=/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
+		   -mpiexec=/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
 		   -xmlfile=summary.xml
 clean-local:
 	-rm -f summary.xml
 
 dist:	
-	if [ ! -d "/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1" ] ; then \
+	if [ ! -d "/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1" ] ; then \
 	    echo "The dist target requires that the mpich2 source directory be provided" ; \
 	    exit 1 ; \
 	fi
@@ -100,8 +100,8 @@ dist:
 	cd .tmp/mpi2test && \
 	    sed -e 's/AC_CONFIG_AUX_DIR.*/AC_CONFIG_AUX_DIR(confdb)/' \
 	        configure.in > conftmp.in && mv conftmp.in configure.in
-	cd .tmp/mpi2test && maint/updatefiles -mpich2dir=/home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
-	cd .tmp/mpi2test && /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/maint/simplemake Makefile.sm
+	cd .tmp/mpi2test && maint/updatefiles -mpich2dir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+	cd .tmp/mpi2test && /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/maint/simplemake Makefile.sm
 	cd .tmp && tar cf mpi2test.tar mpi2test && gzip -9 mpi2test.tar 
 	if [ -s .tmp/mpi2test.tar.gz ] ; then \
 	    mv .tmp/mpi2test.tar.gz . ; rm -rf .tmp ; \

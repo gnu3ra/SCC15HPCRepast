@@ -40,7 +40,7 @@
 # Global variables
 $MPIMajorVersion = "2";
 $MPIMinorVersion = "2";
-$mpiexec = "/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec";    # Name of mpiexec program (including path, if necessary)
+$mpiexec = "/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec";    # Name of mpiexec program (including path, if necessary)
 $np_arg  = "-n";         # Name of argument to specify the number of processes
 $err_count = 0;          # Number of programs that failed.
 $total_count = 0;        # Number of programs tested

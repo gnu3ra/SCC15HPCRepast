@@ -1,5 +1,5 @@
 # this gives access to the mpich2 header files
-prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

@@ -6,14 +6,14 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/io
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/io
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/io
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/io
 DEFS            = -DHAVE_CONFIG_H -I. -I${srcdir}
 CPPFLAGS        = 
 LIBS            = -lpthread 
 MAKE            = make
-CC              = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpicc
+CC              = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpicc
 CFLAGS          =   $(MPICH2_MAKE_CFLAGS)
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 C_LINK         = $(CC)
@@ -99,7 +99,7 @@ clean-local:
 # A special testing target to simplify running just the io tests
 testing:
 	../runtests -srcdir=$(srcdir) -tests=testlist \
-		   -mpiexec=/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
+		   -mpiexec=/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
 		   -xmlfile=summary.xml
 
 .POSIX:

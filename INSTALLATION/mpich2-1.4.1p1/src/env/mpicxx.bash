@@ -28,7 +28,7 @@
 # Set the default values of all variables.
 #
 # Directory locations: Fixed for any MPI implementation
-prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix=${prefix}
 sysconfdir=${prefix}/etc
 includedir=${prefix}/include
@@ -36,7 +36,7 @@ libdir=${exec_prefix}/lib
 
 # Default settings for compiler, flags, and libraries
 CXX="c++"
-CXX_LINKPATH_SHL=""
+CXX_LINKPATH_SHL="-Wl,-rpath -Wl,"
 CXXFLAGS=" "
 LDFLAGS="  "
 LIBS="-lopa -lmpl  -lrt -lpthread  "

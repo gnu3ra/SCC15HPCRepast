@@ -1,15 +1,15 @@
 CC          = gcc
 AR          = ar cr
 RANLIB      = ranlib
-LIBNAME     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
-srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi-io/fortran
-CC_SHL      = true
-SHLIBNAME   = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
+LIBNAME     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich.a
+srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpi/romio/mpi-io/fortran
+CC_SHL      = gcc -fPIC
+SHLIBNAME   = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/lib/libmpich
 
 INCLUDES    = -I. -I../../include -I${srcdir}/../../adio/include -I../../adio/include -I${srcdir}/..
 CFLAGS      = -DMPIO_FORTRAN_SRC    -O2  -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(MPIOPROFILE) 
 
-top_builddir  = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
+top_builddir  = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1
 LIBTOOL       = 
 C_COMPILE       = $(CC) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
 C_COMPILE_SHL   = $(CC_SHL) $(DEFS) $(INCLUDES) $(CFLAGS) $(CPPFLAGS)
@@ -59,7 +59,7 @@ MPIO_REAL_PFOBJECTS = _closef.o _readf.o _openf.o _get_extentf.o \
       _read_ordbf.o _write_ordf.o _write_ordef.o _set_errhf.o _get_errhf.o
 
 all: $(LIBNAME)
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 	    $(MAKE) $(SHLIBNAME).la ;\
 	fi
 
@@ -94,7 +94,7 @@ all: $(LIBNAME)
 profile: $(MPIO_TMP_PFOBJECTS)
 	$(AR) $(LIBNAME) $(MPIO_REAL_PFOBJECTS)
 	$(RANLIB) $(LIBNAME) 
-	@if [ "none" != "none" ] ; then \
+	@if [ "gcc" != "none" ] ; then \
 	    $(MAKE) P$(SHLIBNAME).la ;\
 	fi
 	@rm -f _*.o

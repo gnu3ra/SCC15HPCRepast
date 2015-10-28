@@ -28,7 +28,7 @@
 #
 # Directory locations: Fixed for any MPI implementation.
 # Set from the directory arguments to configure (e.g., --prefix=/usr/local)
-prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix=${prefix}
 sysconfdir=${prefix}/etc
 includedir=${prefix}/include
@@ -38,7 +38,7 @@ libdir=${exec_prefix}/lib
 # Determined by a combination of environment variables and tests within
 # configure (e.g., determining whehter -lsocket is needee)
 CC="gcc"
-C_LINKPATH_SHL=""
+C_LINKPATH_SHL="-Wl,-rpath,"
 CFLAGS=" "
 CPPFLAGS=" "
 LDFLAGS="  "

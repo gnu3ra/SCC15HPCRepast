@@ -9,8 +9,8 @@ top_srcdir           = ..
 CC                   = gcc
 CC_SHL               = @CC_SHL@
 CLINKER              = gcc
-MPI_CC               = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc
-MPI_F77              = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77
+MPI_CC               = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc
+MPI_F77              = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpif77
 MPI_CLINKER          = $(MPI_CC)
 AR                   = ar
 ARFLAGS              = cr
@@ -27,7 +27,7 @@ TRACE_LIBNAME        = tmpe
 F2CMPI_LIBNAME       = mpe_f2cmpi
 F2CMPI_LIBS          = 
 CFLAGS               =    -O2
-MPE_LIBDIR           = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
+MPE_LIBDIR           = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
 LIB_PATH             = $(MPI_LIBS)
 LDFLAGS              =  
 MPE_BUILD_FORTRAN2C  = no
@@ -41,15 +41,15 @@ CP               = cp
 VPATH=.:$(srcdir)
 
 # Installation directories
-prefix           = /home/aballmer/SCC15HPCRepast/ext//MPICH
+prefix           = /home/aballmer/new/SCC15HPCRepast/ext//MPICH
 exec_prefix      = ${prefix}
 bindir           = ${exec_prefix}/bin
 includedir       = ${prefix}/include
 libdir           = ${exec_prefix}/lib
 # Build directories
-includebuild_dir = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
-libbuild_dir     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
-binbuild_dir     = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
+includebuild_dir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/include
+libbuild_dir     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/lib
+binbuild_dir     = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/src/mpe2/bin
 srcdir           = .
 
 EXECS            = 

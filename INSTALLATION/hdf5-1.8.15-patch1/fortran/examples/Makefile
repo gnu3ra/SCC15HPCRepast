@@ -344,7 +344,7 @@ am__set_b = \
       b='$*';; \
   esac
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing aclocal-1.14
 ADD_PARALLEL_FILES = no
 AMTAR = $${TAR-tar}
 
@@ -361,21 +361,21 @@ AM_FCFLAGS =
 AM_LDFLAGS =  
 AM_MAKEFLAGS = 
 AR = ar
-AUTOCONF = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoconf
-AUTOHEADER = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoheader
-AUTOMAKE = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing automake-1.14
+AUTOCONF = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoconf
+AUTOHEADER = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing autoheader
+AUTOMAKE = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing automake-1.14
 AWK = gawk
 BYTESEX = little-endian
-CC = gcc
+CC = mpicc
 CCDEPMODE = depmode=gcc3
-CC_VERSION = /usr/bin/gcc ( gcc (GCC) 4.8.3 20140911 )
+CC_VERSION = /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
 CFLAGS = 
 CLEARFILEBUF = yes
 CODESTACK = no
-CONFIG_DATE = Wed Oct 14 14:44:51 EDT 2015
+CONFIG_DATE = Sun Oct 25 18:51:01 EDT 2015
 CONFIG_MODE = production
 CONFIG_USER = aballmer@n00.localdomain
-CPP = gcc -E
+CPP = mpicc -E
 CPPFLAGS = 
 CXX = no
 CXXCPP = g++ -E
@@ -408,7 +408,7 @@ FC2003 =
 FCFLAGS = 
 FCFLAGS_f90 = 
 FCLIBS = 
-FC_VERSION = no ( GNU Fortran (GCC) 4.8.3 20140911 )
+FC_VERSION = no ( built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
 FGREP = /usr/bin/grep -F
 FSEARCH_DIRS = 
 GREP = /usr/bin/grep
@@ -451,10 +451,10 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_STATIC_EXEC = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing makeinfo
+MAKEINFO = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
-MPE = no
+MPE = 
 NM = /usr/bin/nm -B
 NMEDIT = 
 OBJDUMP = objdump
@@ -469,12 +469,12 @@ PACKAGE_STRING = HDF5 1.8.15-patch1
 PACKAGE_TARNAME = hdf5
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.8.15-patch1
-PARALLEL = no
+PARALLEL = yes
 PATH_SEPARATOR = :
 PERL = perl
 RANLIB = ranlib
-ROOT = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
-RUNPARALLEL = 
+ROOT = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+RUNPARALLEL = mpiexec -n $${NPROCS:=6}
 RUNSERIAL = 
 R_INTEGER = 
 R_LARGE = 
@@ -487,9 +487,9 @@ STATIC_EXEC = no
 STATIC_SHARED = static, shared
 STRICT_FORMAT_CHECKS = no
 STRIP = strip
-TESTPARALLEL = 
+TESTPARALLEL = testpar
 THREADSAFE = no
-TIME = 
+TIME = time
 TR = /usr/bin/tr
 TRACE_API = no
 UNAME_INFO = Linux n00.localdomain 3.10.0-229.11.1.el7.x86_64 #1 SMP Thu Aug 6 01:06:18 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
@@ -498,12 +498,12 @@ USE_FILTER_SZIP = no
 USINGMEMCHECKER = no
 VERSION = 1.8.15-patch1
 WORDS_BIGENDIAN = no
-abs_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/examples
-abs_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/examples
-abs_top_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
-abs_top_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+abs_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/examples
+abs_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/fortran/examples
+abs_top_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
+abs_top_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
 ac_ct_AR = 
-ac_ct_CC = gcc
+ac_ct_CC = mpicc
 ac_ct_CXX = 
 ac_ct_DUMPBIN = 
 ac_ct_FC = 
@@ -536,7 +536,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/install-sh
+install_sh = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -545,7 +545,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/aballmer/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/hdf5
+prefix = /home/aballmer/new/SCC15HPCRepast/ext/hdf5
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -611,7 +611,7 @@ TRACE = perl $(top_srcdir)/bin/trace
 CHECK_CLEANFILES = *.chkexe *.chklog *.clog *.clog2 *.h5
 
 # Compile parallel fortran examples only if parallel is enabled
-#EXAMPLE_PROG_PARA = ph5example
+EXAMPLE_PROG_PARA = ph5example
 INSTALL_SCRIPT_FILES = run-fortran-ex.sh
 
 # These are the programs that 'make all' or 'make tests' will build and
@@ -1040,10 +1040,10 @@ h5_crtatt.chkexe_: h5_rdwt.chkexe_
 
 # Tell automake how to build examples using h5fc
 # Additional dependencies for the examples are listed below
-#$(EXTRA_PROG): $(H5FC_PP)
-#	$(H5FC_PP) $(H5CCFLAGS) $(FCFLAGS) -o $@ $(srcdir)/$@.f90;
-$(EXTRA_PROG): $(H5FC)
-	$(H5FC) $(H5CCFLAGS) $(FCFLAGS) -o $@ $(srcdir)/$@.f90;
+$(EXTRA_PROG): $(H5FC_PP)
+	$(H5FC_PP) $(H5CCFLAGS) $(FCFLAGS) -o $@ $(srcdir)/$@.f90;
+#$(EXTRA_PROG): $(H5FC)
+#	$(H5FC) $(H5CCFLAGS) $(FCFLAGS) -o $@ $(srcdir)/$@.f90;
 
 # List dependencies for each example.  Normally, automake would take
 # care of this for us, but if we tell automake about the programs it

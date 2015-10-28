@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname=''
+dlname='libopa.so.1'
 
 # Names of this library.
-library_names=''
+library_names='libopa.so.1.0.0 libopa.so.1 libopa.so'
 
 # The name of the static archive.
 old_library='libopa.a'
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/aballmer/SCC15HPCRepast/ext//MPICH/lib'
+libdir='/home/aballmer/new/SCC15HPCRepast/ext//MPICH/lib'

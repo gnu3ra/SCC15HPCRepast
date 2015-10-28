@@ -6,9 +6,9 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/threads
 MAKE            = make
 
 VPATH = .
@@ -58,7 +58,7 @@ SOURCEFILES     = $(SOURCES)
 # A special testing target to simplify running just the thread tests
 testing:
 	../runtests -srcdir=$(srcdir) -tests=testlist \
-		   -mpiexec=/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
+		   -mpiexec=/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
 		   -xmlfile=summary.xml
 clean-local:
 	-rm -f summary.xml

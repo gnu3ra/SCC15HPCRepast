@@ -6,12 +6,12 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/timer
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/timer
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/timer
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/f90/timer
 LIBS            = -lpthread 
 MAKE            = make
-FC               = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpif90
+FC               = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpif90
 FCFLAGS         = 
 FC_COMPILE      = $(FC) $(FCFLAGS) $(FCINCLUDES)
 FC_LINK        = $(FC)

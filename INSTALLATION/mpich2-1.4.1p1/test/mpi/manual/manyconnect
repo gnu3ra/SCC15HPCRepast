@@ -1,6 +1,6 @@
 #! /bin/sh
 file=`pwd`/test-port
-prefix="/home/aballmer/SCC15HPCRepast/ext//MPICH"
+prefix="/home/aballmer/new/SCC15HPCRepast/ext//MPICH"
 exec_prefix="${prefix}"
 mpiexec="${exec_prefix}/bin/mpiexec"
 starter="$mpiexec -n 1"

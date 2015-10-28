@@ -3,5 +3,5 @@ gcc    -O2
 c++   -O2
   
   
- '--prefix=/home/aballmer/SCC15HPCRepast/ext//MPICH' '--disable-f77' '--disable-fc'
+ '--prefix=/home/aballmer/new/SCC15HPCRepast/ext//MPICH' '--enable-shared' '--disable-f77' '--disable-fc'
  

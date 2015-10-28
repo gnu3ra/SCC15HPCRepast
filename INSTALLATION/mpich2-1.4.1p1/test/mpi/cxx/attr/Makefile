@@ -6,14 +6,14 @@
 all: all-redirect
 
 SHELL           = /bin/sh
-abs_builddir    = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx/attr
+abs_builddir    = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx/attr
 srcdir          = .
-abs_srcdir      = /home/aballmer/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx/attr
+abs_srcdir      = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/test/mpi/cxx/attr
 DEFS            = -DHAVE_CONFIG_H -I. -I${srcdir}
 CPPFLAGS        = 
 LIBS            = -lpthread 
 MAKE            = make
-CXX             = /home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpicxx
+CXX             = /home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpicxx
 CXXFLAGS        = 
 CXX_COMPILE     = $(CXX) $(DEFS) $(INCLUDES) $(CXXFLAGS) $(CPPFLAGS)
 CXX_LINK       = $(CXX)
@@ -85,7 +85,7 @@ SOURCEFILES     = $(SOURCES)
 	(cd ../util && $(MAKE) mtest.o)
 testing:
 	../../runtests -srcdir=$(srcdir) -tests=testlist \
-			-mpiexec=/home/aballmer/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
+			-mpiexec=/home/aballmer/new/SCC15HPCRepast/ext//MPICH/bin/mpiexec \
 		   	-xmlfile=summary.xml
 clean-local:
 	-rm -f summary.xml

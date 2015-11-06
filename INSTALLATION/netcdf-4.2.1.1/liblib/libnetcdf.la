@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/aballmer/SCC15HPCRepast/ext//NetCDF/lib'
+libdir='/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib'

@@ -31,7 +31,7 @@ DUALCASE=1; export DUALCASE # for MKS sh
 # if CDPATH is set.
 (unset CDPATH) >/dev/null 2>&1 && unset CDPATH
 
-relink_command="(cd /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/test; LIBRARY_PATH=/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin; export LIBRARY_PATH; { test -z \"\${COMPILER_PATH+set}\" || unset COMPILER_PATH || { COMPILER_PATH=; export COMPILER_PATH; }; }; { test -z \"\${GCC_EXEC_PREFIX+set}\" || unset GCC_EXEC_PREFIX || { GCC_EXEC_PREFIX=; export GCC_EXEC_PREFIX; }; }; { test -z \"\${LD_RUN_PATH+set}\" || unset LD_RUN_PATH || { LD_RUN_PATH=; export LD_RUN_PATH; }; }; LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4:/opt/intel/debugger_2016/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4:/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin; export LD_LIBRARY_PATH; PATH=/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/:/opt/intel/compilers_and_libraries_2016.0.109/linux/bin/intel64:/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/bin:/opt/intel/debugger_2016/gdb/intel64_mic/bin:/home/aballmer/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/aballmer/.local/bin:/home/aballmer/bin:/home/aballmer/.local/bin:/home/aballmer/bin; export PATH; mpicc -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Winline -Wfloat-equal -Wmissing-format-attribute -Wmissing-noreturn -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wstrict-overflow -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wsuggest-attribute=const -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wsuggest-attribute=pure -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -O3 -fomit-frame-pointer -finline-functions -o \$progdir/\$file external.o  ./.libs/libh5test.a ../src/.libs/libhdf5.so -lz -ldl -lm -Wl,-rpath -Wl,/home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/src/.libs -Wl,-rpath -Wl,/home/aballmer/new/SCC15HPCRepast/ext/hdf5/lib)"
+relink_command=""
 
 # This environment variable determines our operation mode.
 if test "$libtool_install_magic" = "%%%MAGIC variable%%%"; then
@@ -182,38 +182,20 @@ func_exec_program ()
   absdir=`cd "$thisdir" && pwd`
   test -n "$absdir" && thisdir="$absdir"
 
-  program=lt-'external'
+  program='external'
   progdir="$thisdir/.libs"
 
-  if test ! -f "$progdir/$program" ||
-     { file=`ls -1dt "$progdir/$program" "$progdir/../$program" 2>/dev/null | /usr/bin/sed 1q`; \
-       test "X$file" != "X$progdir/$program"; }; then
-
-    file="$$-$program"
-
-    if test ! -d "$progdir"; then
-      mkdir "$progdir"
-    else
-      rm -f "$progdir/$file"
-    fi
-
-    # relink executable if necessary
-    if test -n "$relink_command"; then
-      if relink_command_output=`eval $relink_command 2>&1`; then :
-      else
-	printf %s\n "$relink_command_output" >&2
-	rm -f "$progdir/$file"
-	exit 1
-      fi
-    fi
-
-    mv -f "$progdir/$file" "$progdir/$program" 2>/dev/null ||
-    { rm -f "$progdir/$program";
-      mv -f "$progdir/$file" "$progdir/$program"; }
-    rm -f "$progdir/$file"
-  fi
 
   if test -f "$progdir/$program"; then
+    # Add our own library path to LD_LIBRARY_PATH
+    LD_LIBRARY_PATH="/home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/src/.libs:$LD_LIBRARY_PATH"
+
+    # Some systems cannot cope with colon-terminated LD_LIBRARY_PATH
+    # The second colon is a workaround for a bug in BeOS R4 sed
+    LD_LIBRARY_PATH=`$ECHO "$LD_LIBRARY_PATH" | /usr/bin/sed 's/::*$//'`
+
+    export LD_LIBRARY_PATH
+
     if test "$libtool_execute_magic" != "%%%MAGIC variable%%%"; then
       # Run the actual program with our arguments.
       func_exec_program ${1+"$@"}

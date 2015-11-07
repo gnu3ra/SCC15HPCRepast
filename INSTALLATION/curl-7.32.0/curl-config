@@ -21,7 +21,7 @@
 #
 ###########################################################################
 
-prefix=/home/aballmer/SCC15HPCRepast/ext//CURL
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//CURL
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--without-ssl' '--prefix=/home/aballmer/SCC15HPCRepast/ext//CURL'"
+        echo " '--without-ssl' '--prefix=/home/aballmer/new/SCC15HPCRepast/ext//CURL'"
         ;;
 
     *)

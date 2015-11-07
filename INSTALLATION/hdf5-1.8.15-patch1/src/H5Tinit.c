@@ -17,7 +17,7 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Oct 25, 2015
+ * Created:		Nov  6, 2015
  *			aballmer@n00.localdomain
  *
  * Purpose:		This machine-generated source code contains

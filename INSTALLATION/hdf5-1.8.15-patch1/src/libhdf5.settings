@@ -4,11 +4,11 @@
 General Information:
 -------------------
 		   HDF5 Version: 1.8.15-patch1
-		  Configured on: Sun Oct 25 18:51:01 EDT 2015
+		  Configured on: Fri Nov  6 21:46:51 EST 2015
 		  Configured by: aballmer@n00.localdomain
 		 Configure mode: production
 		    Host system: x86_64-unknown-linux-gnu
-	      Uname information: Linux n00.localdomain 3.10.0-229.11.1.el7.x86_64 #1 SMP Thu Aug 6 01:06:18 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+	      Uname information: Linux n00.localdomain 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
 		       Byte sex: little-endian
 		      Libraries: static, shared
 	     Installation point: /home/aballmer/new/SCC15HPCRepast/ext/hdf5
@@ -16,7 +16,7 @@ General Information:
 Compiling Options:
 ------------------
                Compilation Mode: production
-                     C Compiler: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
+                     C Compiler: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin//mpicc ( MPICH version 3.1.4 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
                          CFLAGS: 
                       H5_CFLAGS: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Winline -Wfloat-equal -Wmissing-format-attribute -Wmissing-noreturn -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wstrict-overflow -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wsuggest-attribute=const -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wsuggest-attribute=pure -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -O3 -fomit-frame-pointer -finline-functions
                       AM_CFLAGS: 

@@ -4,7 +4,7 @@
 # various things about the netCDF installation. This code was
 # contributed by netCDF user Arlindo DaSilva. Thanks Arlindo!
 
-prefix=/home/aballmer/SCC15HPCRepast/ext//NetCDF
+prefix=/home/aballmer/new/SCC15HPCRepast/ext//NetCDF
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

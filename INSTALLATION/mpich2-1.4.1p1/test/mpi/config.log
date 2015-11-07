@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -887,7 +886,7 @@ configure:6900: checking for pthread.h
 configure:6909: result: yes
 configure:6928: checking for library containing pthread_create
 configure:6969: /home/aballmer/new/SCC15HPCRepast/INSTALLATION/mpich2-1.4.1p1/bin/mpicc -o conftest    -nativelinking   conftest.c  >&5
-/tmp/ccjMu9y4.o: In function `main':
+/tmp/ccL5LUgz.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 configure:6976: $? = 1
@@ -1412,7 +1411,6 @@ config.status:914: creating threads/testlist
 config.status:914: creating errors/testlist
 config.status:914: creating errors/cxx/testlist
 config.status:914: creating include/mpitestconf.h
-config.status:1125: include/mpitestconf.h is unchanged
 config.status:1143: executing default-1 commands
 config.status:1143: executing default-2 commands
 config.status:1143: executing default-3 commands

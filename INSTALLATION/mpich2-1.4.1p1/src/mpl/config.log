@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -1653,12 +1652,10 @@ on n00.localdomain
 config.status:1004: creating Makefile
 config.status:1004: creating localdefs
 config.status:1004: creating include/config.h
-config.status:1226: include/config.h is unchanged
 config.status:1278: executing depfiles commands
 config.status:1278: executing libtool commands
 config.status:1278: executing include/mplconfig.h commands
 config.status:2088: creating include/mplconfig.h - prefix MPL for include/config.h defines
-config.status:2110: include/mplconfig.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##

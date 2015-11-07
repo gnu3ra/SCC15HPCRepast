@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -1201,12 +1200,10 @@ config.status:1005: creating src/Makefile
 config.status:1005: creating test/Makefile
 config.status:1005: creating openpa.pc
 config.status:1005: creating src/config.h
-config.status:1227: src/config.h is unchanged
 config.status:1279: executing depfiles commands
 config.status:1279: executing libtool commands
 config.status:1279: executing src/opa_config.h commands
 config.status:2089: creating src/opa_config.h - prefix OPA for src/config.h defines
-config.status:2111: src/opa_config.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##

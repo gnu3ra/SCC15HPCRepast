@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -92,6 +91,7 @@ BASH_LINENO=([0]="0")
 BASH_SOURCE=([0]="./configure")
 BASH_VERSINFO=([0]="4" [1]="2" [2]="46" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
 BASH_VERSION='4.2.46(1)-release'
+CC=mpicc
 CFLAGS=
 CPPFLAGS=
 CXXFLAGS=
@@ -120,7 +120,9 @@ INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 LANG=en_US.UTF-8
 LANGUAGE=C
 LC_ALL=C
+LC_CTYPE=en_US.UTF-8
 LDFLAGS=
+LD_LIBRARY_PATH=/home/aballmer/new/SCC15HPCRepast/ext/MPICH/lib/
 LESSOPEN='||/usr/bin/lesspipe.sh %s'
 LIBOBJS=
 LINENO=3853
@@ -148,7 +150,7 @@ PACKAGE_STRING='HDF5 1.8.15-patch1'
 PACKAGE_TARNAME=hdf5
 PACKAGE_URL=
 PACKAGE_VERSION=1.8.15-patch1
-PATH=/home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/:/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/aballmer/.local/bin:/home/aballmer/bin:/home/aballmer/.local/bin:/home/aballmer/bin
+PATH=/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/:/home/aballmer/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/aballmer/.local/bin:/home/aballmer/bin:/home/aballmer/.local/bin:/home/aballmer/bin
 PATH_SEPARATOR=:
 PERL5LIB=/home/aballmer/perl5/lib/perl5:
 PERL_LOCAL_LIB_ROOT=:/home/aballmer/perl5
@@ -156,7 +158,7 @@ PERL_MB_OPT='--install_base /home/aballmer/perl5'
 PERL_MM_OPT=INSTALL_BASE=/home/aballmer/perl5
 PIPESTATUS=([0]="0")
 POSIXLY_CORRECT=y
-PPID=25256
+PPID=8442
 PS1='$ '
 PS2='> '
 PS4='+ '
@@ -166,22 +168,22 @@ SET_MAKE=
 SHELL=/bin/sh
 SHELLOPTS=braceexpand:hashall:interactive-comments:posix
 SHLVL=3
-SSH_CLIENT='104.194.112.127 41661 22'
-SSH_CONNECTION='198.37.24.95 42524 192.168.1.20 22'
-SSH_TTY=/dev/pts/2
+SSH_CLIENT='198.37.24.95 46353 22'
+SSH_CONNECTION='198.37.24.95 46353 192.168.1.20 22'
+SSH_TTY=/dev/pts/0
 TERM=screen
-TMUX=/tmp/tmux-1002/default,26875,0
-TMUX_PANE=%8
+TMUX=/tmp/tmux-1002/default,8441,0
+TMUX_PANE=%0
 UID=1002
 USER=aballmer
 USE_MAINTAINER_MODE=no
 VERSION=1.8.15-patch1
 XDG_RUNTIME_DIR=/run/user/1002
-XDG_SESSION_ID=201
+XDG_SESSION_ID=909
 _='checking shell variables initial values... '
 _am_tools='gnutar  pax cpio none'
 ac_abs_confdir=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1
-ac_arg=--prefix=/home/aballmer/new/SCC15HPCRepast/ext/hdf5
+ac_arg=CC=mpicc
 ac_aux_dir=bin
 ac_build_alias=x86_64-unknown-linux-gnu
 ac_cache_corrupted=false
@@ -195,13 +197,13 @@ ac_config_headers=' src/H5config.h'
 ac_config_libobj_dir=.
 ac_config_sub='/bin/sh bin/config.sub'
 ac_configure='/bin/sh bin/configure'
-ac_configure_args=' '\''--enable-parallel'\'' '\''--prefix=/home/aballmer/new/SCC15HPCRepast/ext/hdf5'\'''
+ac_configure_args=' '\''--enable-parallel'\'' '\''--prefix=/home/aballmer/new/SCC15HPCRepast/ext/hdf5'\'' '\''CC=mpicc'\'''
 ac_cpp='$CPP $CPPFLAGS'
 ac_cv_build=x86_64-unknown-linux-gnu
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
-ac_cv_env_CC_set=
-ac_cv_env_CC_value=
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value=mpicc
 ac_cv_env_CFLAGS_set=
 ac_cv_env_CFLAGS_value=
 ac_cv_env_CPPFLAGS_set=
@@ -238,8 +240,8 @@ ac_default_prefix=/home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-pat
 ac_dir=bin
 ac_env_CCC_set=
 ac_env_CCC_value=
-ac_env_CC_set=
-ac_env_CC_value=
+ac_env_CC_set=set
+ac_env_CC_value=mpicc
 ac_env_CFLAGS_set=
 ac_env_CFLAGS_value=
 ac_env_CPPFLAGS_set=
@@ -647,7 +649,7 @@ am_lf='
 '
 am_make=make
 am_missing_run='${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/hdf5-1.8.15-patch1/bin/missing '
-am_sleep_pid=20609
+am_sleep_pid=29635
 as_basename=basename
 as_bourne_compatible='if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then :
   emulate sh
@@ -815,7 +817,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 configure:4378: $? = 0
 configure:4367: mpicc -v >&5
-mpicc for MPICH version 3.1.4
+mpicc for MPICH2 version 1.4.1p1
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper
@@ -1177,7 +1179,7 @@ configure:14662: checking how to hardcode library paths into programs
 configure:14687: result: immediate
 configure:14789: checking for shl_load
 configure:14789: mpicc -o conftest       conftest.c  >&5
-/tmp/cclDe6vV.o: In function `main':
+/tmp/cciRYFYz.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:14789: $? = 1
@@ -1307,7 +1309,7 @@ configure: failed program was:
 configure:14835: result: no
 configure:14840: checking for dlopen
 configure:14840: mpicc -o conftest       conftest.c  >&5
-/tmp/cc95kfQ4.o: In function `main':
+/tmp/cci4HQvI.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:14840: $? = 1
@@ -1392,7 +1394,7 @@ configure:15104: $? = 0
 configure:15122: result: yes
 configure:15127: checking whether a statically linked program can dlopen itself
 configure:15207: mpicc -o conftest     -DHAVE_DLFCN_H   -Wl,--export-dynamic -static conftest.c -ldl  >&5
-/tmp/ccveKuih.o: In function `main':
+/tmp/ccga9W7R.o: In function `main':
 conftest.c:(.text+0x1e): warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 /usr/bin/ld: dynamic STT_GNU_IFUNC symbol `strcmp' with pointer equality in `/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/libc.a(strcmp.o)' can not be used when making an executable; recompile with -fPIE and relink with -pie
 collect2: error: ld returned 1 exit status
@@ -15386,7 +15388,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/ccqGKbIC.o: In function `main':
+/tmp/cczbA357.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `_getvideoconfig'
 collect2: error: ld returned 1 exit status
 configure:25751: $? = 1
@@ -15825,7 +15827,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/ccEcbmCM.o: In function `main':
+/tmp/ccntBX9f.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `gettextinfo'
 collect2: error: ld returned 1 exit status
 configure:25751: $? = 1
@@ -16264,7 +16266,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/ccOgO0l0.o: In function `main':
+/tmp/ccNNMP3q.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `GetConsoleScreenBufferInfo'
 collect2: error: ld returned 1 exit status
 configure:25766: $? = 1
@@ -16703,7 +16705,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/ccsj6ut8.o: In function `main':
+/tmp/cc5szWNE.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `_scrsize'
 collect2: error: ld returned 1 exit status
 configure:25780: $? = 1
@@ -23342,7 +23344,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/ccLHMvb5.o: In function `main':
+/tmp/ccI4deMu.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `setsysinfo'
 collect2: error: ld returned 1 exit status
 configure:26019: $? = 1
@@ -25235,7 +25237,7 @@ conftest.c:7:0: warning: macro "PACKAGE_URL" is not used [-Wunused-macros]
 conftest.c:81:0: warning: macro "SIZEOF_UINT_LEAST64_T" is not used [-Wunused-macros]
  #define SIZEOF_UINT_LEAST64_T 8
  ^
-/tmp/cc80Sn3M.o: In function `main':
+/tmp/ccNOsB59.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `sigsetjmp'
 collect2: error: ld returned 1 exit status
 configure:26031: $? = 1
@@ -36918,8 +36920,8 @@ ac_cv_c_inline=inline
 ac_cv_cxx_compiler_gnu=yes
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
-ac_cv_env_CC_set=
-ac_cv_env_CC_value=
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value=mpicc
 ac_cv_env_CFLAGS_set=
 ac_cv_env_CFLAGS_value=
 ac_cv_env_CPPFLAGS_set=
@@ -37130,7 +37132,7 @@ lt_cv_prog_compiler_rtti_exceptions=no
 lt_cv_prog_compiler_static_works=yes
 lt_cv_prog_gnu_ld=yes
 lt_cv_sharedlib_from_linklib_cmd='printf %s\n'
-lt_cv_shlibpath_overrides_runpath=yes
+lt_cv_shlibpath_overrides_runpath=no
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
 lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \([^ ]*\)[ ]*$/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \([^ ]*\)$/  {"\2", (void *) \&\2},/p'\'''
 lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \([^ ]*\)[ ]*$/  {\"\1\", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \(lib[^ ]*\)$/  {"\2", (void *) \&\2},/p'\'' -e '\''s/^[ABCDGIRSTW]* \([^ ]*\) \([^ ]*\)$/  {"lib\2", (void *) \&\2},/p'\'''
@@ -37179,11 +37181,11 @@ BUILD_SHARED_SZIP_CONDITIONAL_TRUE='#'
 BYTESEX='little-endian'
 CC='mpicc'
 CCDEPMODE='depmode=gcc3'
-CC_VERSION='/home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin//mpicc ( MPICH version 3.1.4 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))'
+CC_VERSION='/home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))'
 CFLAGS=''
 CLEARFILEBUF='yes'
 CODESTACK='no'
-CONFIG_DATE='Fri Nov  6 21:46:51 EST 2015'
+CONFIG_DATE='Fri Nov  6 23:43:54 EST 2015'
 CONFIG_MODE='production'
 CONFIG_USER='aballmer@n00.localdomain'
 CPP='mpicc -E'

@@ -428,11 +428,11 @@ AWK = gawk
 BYTESEX = little-endian
 CC = mpicc
 CCDEPMODE = depmode=gcc3
-CC_VERSION = /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin//mpicc ( MPICH version 3.1.4 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
+CC_VERSION = /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))
 CFLAGS = 
 CLEARFILEBUF = yes
 CODESTACK = no
-CONFIG_DATE = Fri Nov  6 21:46:51 EST 2015
+CONFIG_DATE = Fri Nov  6 23:43:54 EST 2015
 CONFIG_MODE = production
 CONFIG_USER = aballmer@n00.localdomain
 CPP = mpicc -E

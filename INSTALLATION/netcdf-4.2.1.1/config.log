@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -736,7 +735,7 @@ configure:14612: $? = 0
 configure:14612: result: yes
 configure:14618: checking for _doprnt
 configure:14618: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccA8Qbl3.o: In function `main':
+/tmp/cckVwWWj.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/conftest.c:87: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:14618: $? = 1
@@ -953,7 +952,7 @@ configure: failed program was:
 configure:14724: result: yes
 configure:14748: checking for strlcat
 configure:14748: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/cc3869b8.o: In function `main':
+/tmp/ccSaRHPv.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/conftest.c:90: undefined reference to `strlcat'
 collect2: error: ld returned 1 exit status
 configure:14748: $? = 1
@@ -1146,7 +1145,7 @@ configure:14748: $? = 0
 configure:14748: result: yes
 configure:14748: checking for MPI_Comm_f2c
 configure:14748: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccLsv8Hb.o: In function `main':
+/tmp/ccHUhkVp.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/conftest.c:107: undefined reference to `MPI_Comm_f2c'
 collect2: error: ld returned 1 exit status
 configure:14748: $? = 1
@@ -2524,7 +2523,6 @@ config.status:1283: creating ncdap_test/expected4/Makefile
 config.status:1283: creating ncdap_test/expectremote3/Makefile
 config.status:1283: creating ncdap_test/expectremote4/Makefile
 config.status:1283: creating config.h
-config.status:1464: config.h is unchanged
 config.status:1512: executing depfiles commands
 config.status:1512: executing libtool commands
 

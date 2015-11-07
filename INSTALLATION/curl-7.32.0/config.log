@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -433,7 +432,7 @@ configure:7022: $? = 0
 configure:7101: gcc -o conftest    conftest.c  >&5
 configure:7101: $? = 0
 configure:7180: gcc -o conftest    conftest.c  >&5
-/tmp/ccZJQ6vS.o: In function `main':
+/tmp/ccwyUuca.o: In function `main':
 conftest.c:(.text+0xa): undefined reference to `inet_ntoa_r'
 collect2: error: ld returned 1 exit status
 configure:7180: $? = 1
@@ -37609,7 +37608,7 @@ configure:28646: checking for socket.h
 configure:28646: result: no
 configure:28665: checking if closesocket can be linked
 configure:28685: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccDjlkOB.o: In function `main':
+/tmp/ccgYoZ4z.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `closesocket'
 collect2: error: ld returned 1 exit status
 configure:28685: $? = 1
@@ -37811,7 +37810,7 @@ configure:28780: checking if closesocket might be used
 configure:28795: result: no
 configure:28807: checking if CloseSocket can be linked
 configure:28826: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccnlf2aC.o: In function `main':
+/tmp/ccE6wW5C.o: In function `main':
 conftest.c:(.text.startup+0x9): undefined reference to `CloseSocket'
 collect2: error: ld returned 1 exit status
 configure:28826: $? = 1
@@ -40355,7 +40354,7 @@ configure:32474: checking for arpa/inet.h
 configure:32474: result: yes
 configure:32494: checking if inet_ntoa_r can be linked
 configure:32523: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cctoCak1.o: In function `main':
+/tmp/ccOFMoGZ.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `inet_ntoa_r'
 collect2: error: ld returned 1 exit status
 configure:32523: $? = 1
@@ -40914,7 +40913,7 @@ configure:33492: checking if ioctl SIOCGIFADDR might be used
 configure:33496: result: yes
 configure:33523: checking if ioctlsocket can be linked
 configure:33542: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccCK7qpv.o: In function `main':
+/tmp/ccH0riGv.o: In function `main':
 conftest.c:(.text.startup+0xd): undefined reference to `ioctlsocket'
 collect2: error: ld returned 1 exit status
 configure:33542: $? = 1
@@ -41164,7 +41163,7 @@ configure:33635: checking if ioctlsocket might be used
 configure:33724: result: no
 configure:33736: checking if IoctlSocket can be linked
 configure:33765: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccuwbrIB.o: In function `main':
+/tmp/ccPe0pUy.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `IoctlSocket'
 collect2: error: ld returned 1 exit status
 configure:33765: $? = 1
@@ -41786,7 +41785,7 @@ configure:35248: checking for setjmp.h
 configure:35248: result: yes
 configure:35268: checking if sigsetjmp can be linked
 configure:35297: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cctTPLMi.o: In function `main':
+/tmp/ccocc5wh.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `sigsetjmp'
 collect2: error: ld returned 1 exit status
 configure:35297: $? = 1
@@ -42098,7 +42097,7 @@ configure:35876: checking if strcasecmp might be used
 configure:35882: result: yes
 configure:35903: checking if strcmpi can be linked
 configure:35932: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cclnL5sM.o: In function `main':
+/tmp/ccMueJrI.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strcmpi'
 collect2: error: ld returned 1 exit status
 configure:35932: $? = 1
@@ -43197,7 +43196,7 @@ configure:36550: checking if strerror_r might be used
 configure:36556: result: yes
 configure:36613: checking if stricmp can be linked
 configure:36642: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cc7I3Jdd.o: In function `main':
+/tmp/ccGS9YUb.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `stricmp'
 collect2: error: ld returned 1 exit status
 configure:36642: $? = 1
@@ -43479,7 +43478,7 @@ configure:36884: checking if strncasecmp might be used
 configure:36890: result: yes
 configure:36911: checking if strncmpi can be linked
 configure:36940: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccE4gEsd.o: In function `main':
+/tmp/ccm9djQl.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strncmpi'
 collect2: error: ld returned 1 exit status
 configure:36940: $? = 1
@@ -43745,7 +43744,7 @@ configure:37033: checking if strncmpi might be used
 configure:37048: result: no
 configure:37060: checking if strnicmp can be linked
 configure:37089: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccceiNee.o: In function `main':
+/tmp/ccBMWuCf.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `strnicmp'
 collect2: error: ld returned 1 exit status
 configure:37089: $? = 1
@@ -44085,7 +44084,7 @@ configure:37852: $? = 0
 configure:37852: result: yes
 configure:37852: checking for getpass_r
 configure:37852: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccuLYk8P.o: In function `main':
+/tmp/cct8ZavO.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `getpass_r'
 collect2: error: ld returned 1 exit status
 configure:37852: $? = 1
@@ -44355,7 +44354,7 @@ configure: failed program was:
 configure:37852: result: no
 configure:37864: checking deeper for getpass_r
 configure:37881: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cciD6d6S.o: In function `main':
+/tmp/ccZs2ivT.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `getpass_r'
 collect2: error: ld returned 1 exit status
 configure:37881: $? = 1
@@ -44651,7 +44650,7 @@ configure:37852: $? = 0
 configure:37852: result: yes
 configure:37852: checking for setmode
 configure:37852: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/cc9uYdbk.o: In function `main':
+/tmp/cchZFZKt.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `setmode'
 collect2: error: ld returned 1 exit status
 configure:37852: $? = 1
@@ -44930,7 +44929,7 @@ configure: failed program was:
 configure:37852: result: no
 configure:37864: checking deeper for setmode
 configure:37881: gcc -o conftest -O2 -Wno-system-headers   conftest.c -lz  >&5
-/tmp/ccl3X2Bp.o: In function `main':
+/tmp/ccKvTt2m.o: In function `main':
 conftest.c:(.text.startup+0x7): undefined reference to `setmode'
 collect2: error: ld returned 1 exit status
 configure:37881: $? = 1

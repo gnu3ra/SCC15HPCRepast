@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -448,7 +447,6 @@ on n00.localdomain
 config.status:772: creating Makefile
 config.status:772: creating localdefs
 config.status:772: creating pmiconf.h
-config.status:983: pmiconf.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##

@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -486,7 +485,7 @@ configure:14485: checking for netcdf.h
 configure:14485: result: yes
 configure:14497: checking for library containing nc_open
 configure:14528: gcc -o conftest -g -O2 -I/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/include -L/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib conftest.c -ldl >&5
-/tmp/ccXC1yFn.o: In function `main':
+/tmp/ccS53pov.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-cxx-4.2/conftest.c:36: undefined reference to `nc_open'
 collect2: error: ld returned 1 exit status
 configure:14528: $? = 1
@@ -535,7 +534,7 @@ configure:14528: $? = 0
 configure:14545: result: -lnetcdf
 configure:14558: checking for nc_def_opaque
 configure:14558: gcc -o conftest -g -O2 -I/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/include -L/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib conftest.c -lnetcdf -ldl >&5
-/tmp/ccL4hicr.o: In function `main':
+/tmp/ccw6Okiz.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-cxx-4.2/conftest.c:59: undefined reference to `nc_def_opaque'
 collect2: error: ld returned 1 exit status
 configure:14558: $? = 1
@@ -609,7 +608,7 @@ configure:14558: $? = 0
 configure:14558: result: yes
 configure:14558: checking for nc_set_log_level
 configure:14558: gcc -o conftest -g -O2 -I/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/include -L/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib conftest.c -lnetcdf -ldl >&5
-/tmp/ccxeX9Jy.o: In function `main':
+/tmp/ccKaQwUF.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-cxx-4.2/conftest.c:60: undefined reference to `nc_set_log_level'
 collect2: error: ld returned 1 exit status
 configure:14558: $? = 1
@@ -680,7 +679,7 @@ configure: failed program was:
 configure:14558: result: no
 configure:14558: checking for nc_use_parallel_enabled
 configure:14558: gcc -o conftest -g -O2 -I/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/include -L/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib conftest.c -lnetcdf -ldl >&5
-/tmp/ccVuC3XE.o: In function `main':
+/tmp/ccA3AAqM.o: In function `main':
 /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-cxx-4.2/conftest.c:60: undefined reference to `nc_use_parallel_enabled'
 collect2: error: ld returned 1 exit status
 configure:14558: $? = 1
@@ -772,7 +771,6 @@ config.status:1147: creating man4/Makefile
 config.status:1147: creating cxx/Makefile
 config.status:1147: creating examples/Makefile
 config.status:1147: creating config.h
-config.status:1327: config.h is unchanged
 config.status:1375: executing depfiles commands
 config.status:1375: executing libtool commands
 

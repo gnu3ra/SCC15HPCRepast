@@ -27,7 +27,6 @@ uname -v = #1 SMP Fri Mar 6 11:36:42 UTC 2015
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /home/aballmer/new/newnew/repast_hpc-2.1.0/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin/
 PATH: /home/aballmer/perl5/bin
@@ -57,7 +56,7 @@ configure:2136: checking for virtual path format
 configure:2151: result: VPATH
 configure:2238: result: This MPE build is part of the MPICH2 build
 configure:2391: checking for leftover Makefiles in subpackages 
-configure:2409: result:  "src/misc" "src/callstack" "src/logging" "src/wrappers" "src/collchk" cleaned 
+configure:2406: result: none 
 configure:2686: checking for gcc
 configure:2713: result: gcc
 configure:2945: checking for C compiler version

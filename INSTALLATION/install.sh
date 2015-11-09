@@ -102,16 +102,17 @@ fi
 
   if [[ $1 == hdf5 ]]
   then
-    if [ ! -e hdf5-1.8.13.tar.gz  ]
+    if [ ! -e hdf5-1.8.15-patch1.tar.gz  ]
     then
       echo "Hdf5 tar file not found; you must download this and put it in this directory to continue."
       exit
     fi 
-    tar -xvf hdf5-1.8.13.tar.gz
-    cd hdf5-1.8.13
-    ./configure --prefix=$BASE_DIR/hdf5 --with-default-api-version=v16 --enable-cxx --enable-parallel 
-    make
-    make install
+    tar -xvf hdf5-1.8.15-patch1.tar.gz
+    cd hdf5-1.8.15-patch1
+   ./configure --prefix=$BASE_DIR/hdf5 --enable-parallel 
+   sleep 1
+   make
+   make install
     cd ..
   fi
 

@@ -229,7 +229,7 @@ void ZombieObserver::snapshot()
     gatherPopulation<Zombie>(patchSet, data);
     zombie_out->write(data);
 
-    visualizationSnapshot();
+    visualizationSnapshot(patchSet);
 
     //refreshOutputs(); does nothing to help corruption. just a perfomance hit
     delete data;
@@ -293,7 +293,7 @@ void ZombieObserver::refreshOutputs() {
 
 
 
-void ZombieObserver::visualizationSnapshot() {
+void ZombieObserver::visualizationSnapshot(std::vector<Patch*> patchSet) {
    human_vis = new HdfDataOutput<int>("vis_" + file_props.getProperty(humanfile), file_props.getProperty(human_dataname) ,_rank, H5T_STD_I32LE, communicator);
     human_vis->configure(total, vertical_run, horizontal_run, 
 			 repast::strToInt(file_props.getProperty("proc.per.x")), 
@@ -306,24 +306,19 @@ void ZombieObserver::visualizationSnapshot() {
 			  repast::strToInt(file_props.getProperty("proc.per.y")), 
 			  _rank);
 
-
     GridDimensions dim = grid()->dimensions();    
     int size = dim.extents(0) * dim.extents(1);
 
-    std::vector<Patch*> patchSet;
-    gatherPatches(patchSet);
-    int *data = new int[size];
 
+    int *data = new int[size];
     gatherPopulation<Human>(patchSet, data);
     human_vis->write(data);
-    
     gatherPopulation<Zombie>(patchSet, data);
     zombie_vis->write(data);
 
     closeVisualizationOutputs();
 
     //refreshOutputs(); does nothing to help corruption. just a perfomance hit
-    delete data;
 
 }
 

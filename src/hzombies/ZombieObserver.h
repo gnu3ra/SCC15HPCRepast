@@ -44,11 +44,10 @@
 #include "relogo/Observer.h"
 #include "repast_hpc/AgentRequest.h"
 #include "repast_hpc/Properties.h"
-
+#include "relogo/Patch.h"
 #include "AgentPackage.h"
 #include "hdf_datainput.h"
 #include "hdf_dataoutput.h"
-
 class ZombieObserver : public repast::relogo::Observer {
 
 private:
@@ -88,7 +87,7 @@ private:
 	void closeOutputs();
 	void refreshOutputs();
 	void closeVisualizationOutputs();
-	void visualizationSnapshot();
+	void visualizationSnapshot(std::vector<repast::relogo::Patch*>);
 public:
 	ZombieObserver() : _infectionCount(0) {}
 	virtual ~ZombieObserver() {}

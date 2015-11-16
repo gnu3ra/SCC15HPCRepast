@@ -229,6 +229,7 @@ void ZombieObserver::snapshot()
     gatherPopulation<Zombie>(patchSet, data);
     zombie_out->write(data);
 
+    refreshOutputs();
     delete data;
 }
 
@@ -263,10 +264,17 @@ void ZombieObserver::closeOutputs()
     delete zombie_out;
 }
 
+void ZombieObserver::refreshOutputs() {
+  human_out->close();
+  zombie_out->close();
+  setupOutputs(file_props, "human.output.file", "human.dataname", "zombie.output.file", "zombie.dataname");
+}
+
 void ZombieObserver::setup(Properties& props) {
     repast::Timer initTimer;
     initTimer.start();
 
+    file_props = props;
     humanType = create<Human> (0);
     zombieType = create<Zombie> (0);
 

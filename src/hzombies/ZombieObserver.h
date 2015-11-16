@@ -52,6 +52,7 @@
 class ZombieObserver : public repast::relogo::Observer {
 
 private:
+  repast::Properties file_props;
 	repast::Properties props;
 	int zombieType, humanType;
 	int _infectionCount;
@@ -80,6 +81,7 @@ private:
 
 	void snapshot();
 	void closeOutputs();
+	void refreshOutputs();
 public:
 	ZombieObserver() : _infectionCount(0) {}
 	virtual ~ZombieObserver() {}

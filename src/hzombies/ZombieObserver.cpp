@@ -193,7 +193,7 @@ template<typename AgentType>
 {
     int data_dim[2];
     int *data;
-    MPI_Comm communicator = MPI_COMM_WORLD;
+    communicator = MPI_COMM_WORLD;
 
     std::vector<Patch*> patchSet;
     gatherPatches(patchSet);
@@ -229,16 +229,24 @@ void ZombieObserver::snapshot()
     gatherPopulation<Zombie>(patchSet, data);
     zombie_out->write(data);
 
+    visualizationSnapshot(patchSet);
+
+    //refreshOutputs(); does nothing to help corruption. just a perfomance hit
     delete data;
 }
 
 
-void ZombieObserver::setupOutputs(Properties& props, std::string humanfile, std::string human_dataname, std::string zombiefile, std::string zombie_dataname)
+void ZombieObserver::setupOutputs(Properties& props, std::string humanfile_a, std::string human_dataname_a, std::string zombiefile_a, std::string zombie_dataname_a)
 {
+  humanfile = humanfile_a;
+  zombiefile = zombiefile_a;
+  human_dataname = human_dataname_a;
+  zombie_dataname = zombie_dataname_a;
     GridDimensions dim = grid()->dimensions();
-    int horizontal_run = dim.extents(0);
-    int vertical_run   = dim.extents(1);
-    int total = strToInt(props.getProperty("stop.at")) / strToInt(props.getProperty("output.interval"));    
+    horizontal_run = dim.extents(0);
+    vertical_run   = dim.extents(1);
+    total = strToInt(props.getProperty("stop.at")) / strToInt(props.getProperty("output.interval"));  
+    
     MPI_Comm communicator = MPI_COMM_WORLD;
 
     human_out = new HdfDataOutput<int>(props.getProperty(humanfile), props.getProperty(human_dataname) ,_rank, H5T_STD_I32LE, communicator);
@@ -252,6 +260,8 @@ void ZombieObserver::setupOutputs(Properties& props, std::string humanfile, std:
 			  repast::strToInt(props.getProperty("proc.per.x")), 
 			  repast::strToInt(props.getProperty("proc.per.y")), 
 			  _rank);
+
+   
 }
 
 void ZombieObserver::closeOutputs()
@@ -263,10 +273,60 @@ void ZombieObserver::closeOutputs()
     delete zombie_out;
 }
 
+
+
+void ZombieObserver::closeVisualizationOutputs()
+{
+    human_vis->close();
+    zombie_vis->close();
+    
+    delete human_vis;
+    delete zombie_vis;
+}
+
+
+void ZombieObserver::refreshOutputs() {
+  human_out->close();
+  zombie_out->close();
+  setupOutputs(file_props, "human.output.file", "human.dataname", "zombie.output.file", "zombie.dataname");
+}
+
+
+
+void ZombieObserver::visualizationSnapshot(std::vector<Patch*> patchSet) {
+   human_vis = new HdfDataOutput<int>("vis_" + file_props.getProperty(humanfile), file_props.getProperty(human_dataname) ,_rank, H5T_STD_I32LE, communicator);
+    human_vis->configure(total, vertical_run, horizontal_run, 
+			 repast::strToInt(file_props.getProperty("proc.per.x")), 
+			 repast::strToInt(file_props.getProperty("proc.per.y")), 
+			 _rank);
+
+    zombie_vis = new HdfDataOutput<int>("vis_" +file_props.getProperty(zombiefile), file_props.getProperty(zombie_dataname) ,_rank, H5T_STD_I32LE, communicator);
+    zombie_vis->configure(total, vertical_run, horizontal_run, 
+			  repast::strToInt(file_props.getProperty("proc.per.x")), 
+			  repast::strToInt(file_props.getProperty("proc.per.y")), 
+			  _rank);
+
+    GridDimensions dim = grid()->dimensions();    
+    int size = dim.extents(0) * dim.extents(1);
+
+
+    int *data = new int[size];
+    gatherPopulation<Human>(patchSet, data);
+    human_vis->write(data);
+    gatherPopulation<Zombie>(patchSet, data);
+    zombie_vis->write(data);
+
+    closeVisualizationOutputs();
+
+    //refreshOutputs(); does nothing to help corruption. just a perfomance hit
+
+}
+
 void ZombieObserver::setup(Properties& props) {
     repast::Timer initTimer;
     initTimer.start();
 
+    file_props = props;
     humanType = create<Human> (0);
     zombieType = create<Zombie> (0);
 
@@ -284,7 +344,7 @@ void ZombieObserver::setup(Properties& props) {
     InfectionSum* iSum = new InfectionSum(this);
     svbuilder.addDataSource(repast::createSVDataSource("number_infected", iSum, std::plus<int>()));
     addDataSet(svbuilder.createDataSet());
-    
+
     
 #ifndef _WIN32
     // no netcdf under windows

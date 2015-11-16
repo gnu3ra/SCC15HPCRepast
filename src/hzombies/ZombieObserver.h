@@ -44,23 +44,28 @@
 #include "relogo/Observer.h"
 #include "repast_hpc/AgentRequest.h"
 #include "repast_hpc/Properties.h"
-
+#include "relogo/Patch.h"
 #include "AgentPackage.h"
 #include "hdf_datainput.h"
 #include "hdf_dataoutput.h"
-
 class ZombieObserver : public repast::relogo::Observer {
 
 private:
+  repast::Properties file_props;
 	repast::Properties props;
 	int zombieType, humanType;
 	int _infectionCount;
-
-
+	int total, vertical_run, horizontal_run;
+        std::string humanfile;
+	std::string zombiefile;
+	std::string human_dataname;
+	std::string zombie_dataname;
+	MPI_Comm communicator;
+	
 	// Added by Hoony Park
 	std::map<const std::type_info*, int, repast::relogo::TypeInfoCmp> idMap;
 
-	HdfDataOutput<int> *human_out, *zombie_out;
+	HdfDataOutput<int> *human_out, *zombie_out, *human_vis, *zombie_vis;
 
 	template<typename AgentType, typename T> 
 	    void placeAgents(std::vector<repast::relogo::Patch*> &patchSet, T* io_data);
@@ -80,6 +85,9 @@ private:
 
 	void snapshot();
 	void closeOutputs();
+	void refreshOutputs();
+	void closeVisualizationOutputs();
+	void visualizationSnapshot(std::vector<repast::relogo::Patch*>);
 public:
 	ZombieObserver() : _infectionCount(0) {}
 	virtual ~ZombieObserver() {}

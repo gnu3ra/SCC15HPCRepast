@@ -107,8 +107,13 @@ fi
       echo "Hdf5 tar file not found; you must download this and put it in this directory to continue."
       exit
     fi 
+<<<<<<< HEAD
     tar -xvf hdf5-1.8.13.tar.gz
     cd hdf5-1.8.13
+=======
+    tar -xvf hdf5-1.8.15-patch1.tar.gz
+    cd hdf5-1.8.15-patch1
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 ./configure --prefix=$BASE_DIR/hdf5 --enable-parallel
    sleep 1
    make -j 64

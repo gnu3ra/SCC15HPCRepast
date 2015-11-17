@@ -3,6 +3,7 @@
 
 General Information:
 -------------------
+<<<<<<< HEAD
 		   HDF5 Version: 1.8.13
 		  Configured on: Tue Nov 17 03:27:21 UTC 2015
 		  Configured by: aballmer@n00
@@ -12,6 +13,17 @@ General Information:
 		       Byte sex: little-endian
 		      Libraries: static
 	     Installation point: /gpfs/iit-fs0/home/aballmer/SCC15HPCRepast/ext//hdf5
+=======
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Tue Nov 10 03:14:30 UTC 2015
+		  Configured by: aballmer@n00.ftm.alcf.anl.gov
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux n00.ftm.alcf.anl.gov 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /home/aballmer/SCC15HPCRepast/ext//hdf5
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 
 Compiling Options:
 ------------------

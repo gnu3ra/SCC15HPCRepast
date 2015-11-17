@@ -17,7 +17,11 @@ old_library='libnetcdf_c++.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
+<<<<<<< HEAD
 dependency_libs=' -L/home/aballmer/SCC15HPCRepast/ext//NetCDF/lib /home/aballmer/SCC15HPCRepast/ext//NetCDF/lib/libnetcdf.la'
+=======
+dependency_libs=' -L/home/aballmer/SCC15HPCRepast/ext//NetCDF/lib /home/aballmer/SCC15HPCRepast/ext//NetCDF/lib/libnetcdf.la -lz -lcurl'
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

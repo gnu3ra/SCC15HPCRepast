@@ -183,7 +183,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -198,7 +198,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
@@ -318,10 +318,10 @@ EXAMPLES = examples
 #NC_TEST4 = nc_test4
 
 # Build the opendap client?
-#OCLIB = oc
-#DAP2 = libdap2
+OCLIB = oc
+DAP2 = libdap2
 #if BUILD_UTILITIES
-#NCDAPTESTDIR = ncdap_test
+NCDAPTESTDIR = ncdap_test
 #endif # BUILD_UTILITIES
 
 # Build libcdmr

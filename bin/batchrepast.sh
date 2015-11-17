@@ -10,4 +10,4 @@
 NUM=10
 
 #./powermon.sh scale1/run$$NUM/power.log &
-mpirun -n 162 -host n03  ./hzombie_model ./hzombie_config.props ./hzombie_model_small.props
+mpirun -n 256 -host n03  ./hzombie_model ./hzombie_config.props ./hzombie_model_small.props

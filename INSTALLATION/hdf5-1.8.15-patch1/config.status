@@ -674,8 +674,13 @@ postuninstall_cmds=''
 finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
 finish_eval=''
 hardcode_into_libs='yes'
+<<<<<<< HEAD
 sys_lib_search_path_spec='/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64_lin/gcc4.4 '
 sys_lib_dlsearch_path_spec='/lib /usr/lib /usr/lib64/atlas /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm '
+=======
+sys_lib_search_path_spec='/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64_lin/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin '
+sys_lib_dlsearch_path_spec='/lib /usr/lib /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm '
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 hardcode_action='immediate'
 enable_dlopen='yes'
 enable_dlopen_self='yes'
@@ -1023,8 +1028,13 @@ S["CC_VERSION"]="/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64
 S["WORDS_BIGENDIAN"]="no"
 S["BYTESEX"]="little-endian"
 S["CONFIG_MODE"]="production"
+<<<<<<< HEAD
 S["CONFIG_USER"]="aballmer@n00"
 S["CONFIG_DATE"]="Tue Nov 17 00:35:29 UTC 2015"
+=======
+S["CONFIG_USER"]="aballmer@n00.ftm.alcf.anl.gov"
+S["CONFIG_DATE"]="Tue Nov 10 03:14:30 UTC 2015"
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 S["H5_VERSION"]="1.8.15-patch1"
 S["DIRECT_VFD_CONDITIONAL_FALSE"]=""
 S["DIRECT_VFD_CONDITIONAL_TRUE"]="#"
@@ -1128,7 +1138,11 @@ S["ac_ct_CC"]="mpicc"
 S["LDFLAGS"]=""
 S["CFLAGS"]=""
 S["CC"]="mpicc"
+<<<<<<< HEAD
 S["UNAME_INFO"]="Linux n00 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux"
+=======
+S["UNAME_INFO"]="Linux n00.ftm.alcf.anl.gov 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux"
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 S["enable_static"]="yes"
 S["enable_shared"]="yes"
 S["STATIC_SHARED"]="static, shared"

@@ -2,7 +2,11 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (netcdf-cxx) 4.2
+<<<<<<< HEAD
 # Libtool was configured on host n00:
+=======
+# Libtool was configured on host n00.ftm.alcf.anl.gov:
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -240,7 +244,11 @@ hardcode_into_libs=yes
 sys_lib_search_path_spec="/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin /usr/lib64 "
 
 # Run-time system search path for libraries.
+<<<<<<< HEAD
 sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib /usr/lib64/atlas /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm "
+=======
+sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm "
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 
 # Whether dlopen is supported.
 dlopen_support=unknown
@@ -282,7 +290,7 @@ wl="-Wl,"
 pic_flag=" -fPIC -DPIC"
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -9280,7 +9288,7 @@ wl="-Wl,"
 pic_flag=" -fPIC -DPIC"
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -9394,10 +9402,17 @@ compiler_lib_search_dirs=""
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
+<<<<<<< HEAD
 predep_objects="-mIPOPT_obj_output_file_name=/tmp/ipo_icpcyRyJwa.o -mGLOB_obj_output_file=/tmp/ipo_icpcyRyJwa.o"
 postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbeginS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o"
 predeps=""
 postdeps="-L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/ -L/lib/../lib64 -L/lib/../lib64/ -L/usr/lib/../lib64 -L/usr/lib/../lib64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../ -L/lib64 -L/lib/ -L/usr/lib64 -L/usr/lib -limf -lsvml -lirng -lm -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc -lgcc_s -lintlc -lsvml -lc -lgcc -lgcc_s -lirc_s -ldl -lc"
+=======
+predep_objects="-mIPOPT_obj_output_file_name=/tmp/ipo_icpcTcmwj3.o -mGLOB_obj_output_file=/tmp/ipo_icpcTcmwj3.o"
+postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbeginS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o"
+predeps=""
+postdeps="-L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4 -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/ -L/lib/../lib64 -L/lib/../lib64/ -L/usr/lib/../lib64 -L/usr/lib/../lib64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/../compiler/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../tbb/lib/intel64_lin/gcc4.4/ -L/opt/intel/compilers_and_libraries_2016.0.109/linux/daal/../compiler/lib/intel64_lin/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../ -L/lib64 -L/lib/ -L/usr/lib64 -L/usr/lib -limf -lsvml -lirng -lm -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc -lgcc_s -lintlc -lsvml -lc -lgcc -lgcc_s -lirc_s -ldl -lc"
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 
 # The library search path used internally by the compiler when linking
 # a shared library.

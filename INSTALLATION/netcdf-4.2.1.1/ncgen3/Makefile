@@ -49,7 +49,7 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/lib_flags.am
-#am__append_1 = -I${top_srcdir}/oc
+am__append_1 = -I${top_srcdir}/oc
 
 # This turns on declspec magic in netcdf.h for windows DLLs.
 #am__append_2 = -DDLL_NETCDF
@@ -149,7 +149,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -164,7 +164,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s

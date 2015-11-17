@@ -417,9 +417,15 @@ CC_VERSION = /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/bin
 CFLAGS = 
 CLEARFILEBUF = yes
 CODESTACK = no
+<<<<<<< HEAD
 CONFIG_DATE = Tue Nov 17 00:35:29 UTC 2015
 CONFIG_MODE = production
 CONFIG_USER = aballmer@n00
+=======
+CONFIG_DATE = Tue Nov 10 03:14:30 UTC 2015
+CONFIG_MODE = production
+CONFIG_USER = aballmer@n00.ftm.alcf.anl.gov
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 CPP = mpicc -E
 CPPFLAGS = 
 CXX = no
@@ -537,7 +543,11 @@ THREADSAFE = no
 TIME = time
 TR = /usr/bin/tr
 TRACE_API = no
+<<<<<<< HEAD
 UNAME_INFO = Linux n00 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+=======
+UNAME_INFO = Linux n00.ftm.alcf.anl.gov 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 USE_FILTER_DEFLATE = yes
 USE_FILTER_SZIP = no
 USINGMEMCHECKER = no

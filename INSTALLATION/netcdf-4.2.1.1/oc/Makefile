@@ -76,10 +76,10 @@ am__objects_1 = liboc_la-occurlfunctions.lo liboc_la-dapparse.lo \
 	liboc_la-occlientparams.lo liboc_la-ocrc.lo liboc_la-ocread.lo \
 	liboc_la-xxdr.lo liboc_la-daptab.lo
 am__objects_2 =
-#am_liboc_la_OBJECTS = $(am__objects_1) \
-#	$(am__objects_2)
+am_liboc_la_OBJECTS = $(am__objects_1) \
+	$(am__objects_2)
 liboc_la_OBJECTS = $(am_liboc_la_OBJECTS)
-#am_liboc_la_rpath =
+am_liboc_la_rpath =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -129,7 +129,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -144,7 +144,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
@@ -245,9 +245,9 @@ ocinternal.h oclist.h oclog.h ocnode.h occlientparams.h ocutil.h ocrc.h	\
 ocread.h xxdr.h daptab.h \
 oc.h
 
-#noinst_LTLIBRARIES = liboc.la
-#liboc_la_SOURCES = $(SRC) $(HDRS) 
-#liboc_la_CPPFLAGS = $(AM_CPPFLAGS)
+noinst_LTLIBRARIES = liboc.la
+liboc_la_SOURCES = $(SRC) $(HDRS) 
+liboc_la_CPPFLAGS = $(AM_CPPFLAGS)
 all: all-am
 
 .SUFFIXES:

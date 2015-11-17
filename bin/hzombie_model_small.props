@@ -37,8 +37,8 @@ grid.buffer = 2
 # proc.per.x X proc.per.y must be the total number of mpi processes.
 #
 #288 procs
-proc.per.x = 18
-proc.per.y = 9
+proc.per.x = 16
+proc.per.y = 16
 
 # population input/output files
 #

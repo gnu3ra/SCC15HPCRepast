@@ -37,13 +37,13 @@
 /* #undef DLL_NETCDF */
 
 /* if true, build DAP Client */
-/* #undef ENABLE_DAP */
+#define ENABLE_DAP 1
 
 /* if true, enable DAP group names */
-/* #undef ENABLE_DAP_GROUPS */
+#define ENABLE_DAP_GROUPS 1
 
 /* if true, do remote tests */
-/* #undef ENABLE_DAP_REMOTE_TESTS */
+#define ENABLE_DAP_REMOTE_TESTS 1
 
 /* if true, run extra tests which may not work yet */
 /* #undef EXTRA_TESTS */
@@ -394,7 +394,7 @@
 /* #undef USE_CDMREMOTE */
 
 /* if true, build DAP Client */
-/* #undef USE_DAP */
+#define USE_DAP 1
 
 /* if true, include NC_DISKLESS code */
 #define USE_DISKLESS 1

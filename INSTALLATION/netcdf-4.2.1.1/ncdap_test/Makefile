@@ -48,7 +48,7 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/lib_flags.am
-#am__append_1 = -I${top_srcdir}/oc
+am__append_1 = -I${top_srcdir}/oc
 
 # This turns on declspec magic in netcdf.h for windows DLLs.
 #am__append_2 = -DDLL_NETCDF
@@ -57,14 +57,14 @@ TESTS = tst_ncdap3.sh $(am__append_3) $(am__append_4) $(am__EXEEXT_1)
 
 # remote tests are optional
 # because the server may be down or inaccessible
-#am__append_3 = tst_remote3.sh
-##am__append_4 = tst_longremote3.sh
-#am__append_5 = t_dap3a test_cvt3 \
-#	test_vara test_partvar \
-#	test_varm3 t_dap3a
-#am__append_6 = t_dap3a test_cvt3 \
-#	test_vara test_partvar \
-#	test_varm3 t_dap3a
+am__append_3 = tst_remote3.sh
+#am__append_4 = tst_longremote3.sh
+am__append_5 = t_dap3a test_cvt3 \
+	test_vara test_partvar \
+	test_varm3 t_dap3a
+am__append_6 = t_dap3a test_cvt3 \
+	test_vara test_partvar \
+	test_varm3 t_dap3a
 #am__append_7 = test_cvt4 t_dap4
 subdir = ncdap_test
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -78,42 +78,42 @@ mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
-#am__EXEEXT_1 = t_dap3a$(EXEEXT) \
-#	test_cvt3$(EXEEXT) \
-#	test_vara$(EXEEXT) \
-#	test_partvar$(EXEEXT) \
-#	test_varm3$(EXEEXT) \
-#	t_dap3a$(EXEEXT)
+am__EXEEXT_1 = t_dap3a$(EXEEXT) \
+	test_cvt3$(EXEEXT) \
+	test_vara$(EXEEXT) \
+	test_partvar$(EXEEXT) \
+	test_varm3$(EXEEXT) \
+	t_dap3a$(EXEEXT)
 am_nctestserver_OBJECTS = nctestserver.$(OBJEXT)
 nctestserver_OBJECTS = $(am_nctestserver_OBJECTS)
 nctestserver_LDADD = $(LDADD)
 nctestserver_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
 am__t_dap3a_SOURCES_DIST = t_dap3a.c
-#am_t_dap3a_OBJECTS = t_dap3a.$(OBJEXT)
+am_t_dap3a_OBJECTS = t_dap3a.$(OBJEXT)
 t_dap3a_OBJECTS = $(am_t_dap3a_OBJECTS)
 t_dap3a_LDADD = $(LDADD)
 t_dap3a_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
 am__test_cvt3_SOURCES_DIST = test_cvt.c
-#am_test_cvt3_OBJECTS =  \
-#	test_cvt.$(OBJEXT)
+am_test_cvt3_OBJECTS =  \
+	test_cvt.$(OBJEXT)
 test_cvt3_OBJECTS = $(am_test_cvt3_OBJECTS)
 test_cvt3_LDADD = $(LDADD)
 test_cvt3_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
 am__test_partvar_SOURCES_DIST = test_partvar.c
-#am_test_partvar_OBJECTS =  \
-#	test_partvar.$(OBJEXT)
+am_test_partvar_OBJECTS =  \
+	test_partvar.$(OBJEXT)
 test_partvar_OBJECTS = $(am_test_partvar_OBJECTS)
 test_partvar_LDADD = $(LDADD)
 test_partvar_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
 am__test_vara_SOURCES_DIST = test_vara.c
-#am_test_vara_OBJECTS =  \
-#	test_vara.$(OBJEXT)
+am_test_vara_OBJECTS =  \
+	test_vara.$(OBJEXT)
 test_vara_OBJECTS = $(am_test_vara_OBJECTS)
 test_vara_LDADD = $(LDADD)
 test_vara_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
 am__test_varm3_SOURCES_DIST = test_varm3.c
-#am_test_varm3_OBJECTS =  \
-#	test_varm3.$(OBJEXT)
+am_test_varm3_OBJECTS =  \
+	test_varm3.$(OBJEXT)
 test_varm3_OBJECTS = $(am_test_varm3_OBJECTS)
 test_varm3_LDADD = $(LDADD)
 test_varm3_DEPENDENCIES = ${top_builddir}/liblib/libnetcdf.la
@@ -210,7 +210,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -225,7 +225,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
@@ -318,11 +318,11 @@ AM_LDFLAGS =
 LDADD = ${top_builddir}/liblib/libnetcdf.la 
 TESTS_ENVIRONMENT = TOPSRCDIR=${abs_top_srcdir}
 nctestserver_SOURCES = nctestserver.c
-#test_cvt3_SOURCES = test_cvt.c
-#test_vara_SOURCES = test_vara.c
-#test_partvar_SOURCES = test_partvar.c
-#test_varm3_SOURCES = test_varm3.c
-#t_dap3a_SOURCES = t_dap3a.c
+test_cvt3_SOURCES = test_cvt.c
+test_vara_SOURCES = test_vara.c
+test_partvar_SOURCES = test_partvar.c
+test_varm3_SOURCES = test_varm3.c
+t_dap3a_SOURCES = t_dap3a.c
 
 #TESTS += tst_ncdap4.sh
 

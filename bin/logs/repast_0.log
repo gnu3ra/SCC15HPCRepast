@@ -137,6 +137,7 @@
 10.11.2015 03:19:38 [0] INFO root zombie.dataname = zombie_population
 10.11.2015 03:19:38 [0] INFO root zombie.input.file = zombie.h5
 10.11.2015 03:19:38 [0] INFO root zombie.output.file = zombie_out.h5
+<<<<<<< HEAD
 17.11.2015 02:25:57 [0] INFO root TICK BEGINS: 1
 17.11.2015 02:25:59 [0] INFO root TICK ENDS: 1
 17.11.2015 02:26:27 [0] INFO root TICK BEGINS: 2
@@ -362,3 +363,5 @@
 17.11.2015 03:42:04 [0] INFO root TICK ENDS: 1
 17.11.2015 03:43:48 [0] INFO root TICK BEGINS: 2
 17.11.2015 03:43:50 [0] INFO root TICK ENDS: 2
+=======
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900

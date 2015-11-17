@@ -38,4 +38,8 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
+<<<<<<< HEAD
 libdir='/gpfs/iit-fs0/home/aballmer/SCC15HPCRepast/ext//hdf5/lib'
+=======
+libdir='/home/aballmer/SCC15HPCRepast/ext//hdf5/lib'
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900

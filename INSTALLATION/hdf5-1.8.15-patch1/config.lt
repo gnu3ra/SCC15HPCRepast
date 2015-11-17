@@ -558,8 +558,13 @@ postuninstall_cmds=''
 finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
 finish_eval=''
 hardcode_into_libs='yes'
+<<<<<<< HEAD
 sys_lib_search_path_spec='/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64_lin/gcc4.4 '
 sys_lib_dlsearch_path_spec='/lib /usr/lib /usr/lib64/atlas /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm '
+=======
+sys_lib_search_path_spec='/usr/lib/gcc/x86_64-redhat-linux/4.8.3 /usr/lib64 /lib64 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/ipp/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/mkl/lib/intel64 /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/daal/lib/intel64_lin /opt/intel/compilers_and_libraries_2016.0.109/linux/tbb/lib/intel64_lin/gcc4.4 /opt/intel/compilers_and_libraries_2016.0.109/linux/compiler/lib/intel64_lin '
+sys_lib_dlsearch_path_spec='/lib /usr/lib /usr/lib64/dyninst /usr/lib64/mysql /usr/lib64 /usr/lib64/slurm '
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 hardcode_action='immediate'
 enable_dlopen='yes'
 enable_dlopen_self='yes'

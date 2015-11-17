@@ -26,7 +26,11 @@
 ## then modify them accordingly to represent the new paths.               ##
 ##                                                                        ##
 ############################################################################
+<<<<<<< HEAD
 prefix="/gpfs/iit-fs0/home/aballmer/SCC15HPCRepast/ext//hdf5"
+=======
+prefix="/home/aballmer/SCC15HPCRepast/ext//hdf5"
+>>>>>>> b5720c78cdb2b5f66670edca6228ba7b03844900
 exec_prefix="${prefix}"
 libdir="${exec_prefix}/lib"
 includedir="${prefix}/include"

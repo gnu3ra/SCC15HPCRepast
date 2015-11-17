@@ -1,0 +1,32 @@
+random.seed = 1284067381
+stop.at = 5000
+
+# per process
+human.count = 500;
+zombie.count = 5;
+
+# world definition props
+min.x = 0
+min.y = 0
+max.x = 99
+max.y = 99
+grid.buffer = 5
+
+# these must multiply to total number of processes
+proc.per.x = 13
+proc.per.y = 13
+
+# population input/output files
+human.input.file = humans.h5
+human.output.file = humans_out.h5
+human.dataname = human_population
+
+zombie.input.file = zombies.h5
+zombie.output.file = zombies_out.h5
+zombie.dataname = zombie_population
+
+# output frequency
+output.interval = 10
+
+# named random number distributions
+distribution.zombie_move = int_uniform, 0, 2

@@ -1,0 +1,42 @@
+ Starting... 
+15.11.2015 21:26:23 [0] INFO root TICK BEGINS: 1
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c1a4b8, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c21088, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c24608, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c1d998, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x1b3f798, count=1, MPI_UNSIGNED_LONG, src=-22736, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9c0) failed
+MPI_Irecv(108): Invalid rank has value -22736 but must be nonnegative and less than 8
+terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::mpi::exception> >'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c1d988, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+'
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c21058, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+  what():  MPI_Irecv: Invalid rank, error stack:
+MPI_Irecv(165): MPI_Irecv(buf=0x2c24608, count=1, MPI_UNSIGNED_LONG, src=-22752, tag=1010, MPI_COMM_WORLD, request=0x7fffffffa9b0) failed
+MPI_Irecv(108): Invalid rank has value -22752 but must be nonnegative and less than 8
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 14163 RUNNING AT n00
+=   EXIT CODE: 6
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================

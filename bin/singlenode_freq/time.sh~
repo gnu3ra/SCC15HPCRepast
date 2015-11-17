@@ -1,0 +1,4 @@
+for x in 1000 1200 1400 1600 1800
+do
+cat 1node_$x/run9/runtime.txt  >> time.csv  
+done

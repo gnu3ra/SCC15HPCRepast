@@ -1,0 +1,4 @@
+ Starting... 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 512.0 ON n00 CANCELLED AT 2015-11-15T21:30:43 ***
+slurmstepd: error: *** JOB 512 ON n00 CANCELLED AT 2015-11-15T21:30:43 ***

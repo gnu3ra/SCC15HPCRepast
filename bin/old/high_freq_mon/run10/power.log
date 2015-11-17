@@ -1,0 +1,852 @@
+ENTRY
+1447255572
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1123
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1101
+ENTRY
+1447255573
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1101
+ENTRY
+1447255574
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1101
+ENTRY
+1447255575
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255576
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255577
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255579
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255580
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255581
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1122
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255582
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255583
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1103
+ENTRY
+1447255584
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255586
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255587
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255588
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255589
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255590
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255591
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1147
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255593
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255594
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255595
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255596
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255597
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255598
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255599
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255601
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255602
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255603
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255604
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1121
+ENTRY
+1447255605
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255606
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255608
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255609
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255610
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255611
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255612
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1176
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255613
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255615
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1145
+ENTRY
+1447255616
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255617
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255618
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255619
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255620
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255622
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255623
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1206
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255624
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255625
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255626
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255627
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255628
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255630
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255631
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255632
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255633
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255634
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255635
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1137
+ENTRY
+1447255636
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255638
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255639
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255640
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255641
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255642
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255643
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1191
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255644
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1170
+ENTRY
+1447255646
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255647
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255648
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255649
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255650
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255651
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255652
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255654
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1211
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255655
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1143
+ENTRY
+1447255656
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255657
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255658
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255659
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255660
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255662
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255663
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1190
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255664
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255665
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1150
+ENTRY
+1447255666
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255667
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255668
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255670
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255671
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255672
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255673
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1194
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255674
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255675
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1158
+ENTRY
+1447255677
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255678
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255679
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255680
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255681
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255682
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255683
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1181
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255685
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255686
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255687
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255688
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255689
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255690
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255691
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255693
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255694
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1155
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255695
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255696
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1114
+ENTRY
+1447255697
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255699
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255700
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255701
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255702
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255703
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255704
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1174
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255705
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1111
+ENTRY
+1447255707
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255708
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255709
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255710
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255711
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255712
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255713
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255715
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1164
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255716
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255717
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255718
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255719
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255720
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255722
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255723
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255724
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255725
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1149
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255726
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1113
+ENTRY
+1447255727
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255728
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255730
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255731
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255732
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255733
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255734
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255735
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255736
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255738
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255739
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255740
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255741
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255742
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255743
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255745
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255746
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255747
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1172
+ENTRY
+1447255748
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255749
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255750
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255752
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255753
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255754
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255755
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1156
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255756
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255757
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1129
+ENTRY
+1447255759
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255760
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255761
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255762
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255763
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255764
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255765
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1152
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255767
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1146
+ENTRY
+1447255768
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255769
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255770
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255771
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255772
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255773
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255775
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255776
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255777
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1142
+ENTRY
+1447255778
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255779
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255780
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255782
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255783
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255784
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255785
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255786
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1136
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255787
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1119
+ENTRY
+1447255789
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255790
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255791
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255792
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255793
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255794
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255795
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255797
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255798
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1139
+ENTRY
+1447255799
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255800
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255801
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255802
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255804
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255805
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255806
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1161
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255807
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255808
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255809
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255810
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255812
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255813
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255814
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255815
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163
+ENTRY
+1447255816
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1144
+SNMPv2-SMI::enterprises.21239.6.1.99.4.1.9.1.1 = Gauge32: 1163

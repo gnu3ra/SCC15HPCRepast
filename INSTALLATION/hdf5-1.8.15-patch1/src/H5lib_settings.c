@@ -17,8 +17,8 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Nov 10, 2015
- *			aballmer@n00.ftm.alcf.anl.gov
+ * Created:		Nov 17, 2015
+ *			aballmer@n00
  *
  * Purpose:		This machine-generated source code contains
  *			information about the library build configuration
@@ -38,11 +38,11 @@ char H5libhdf5_settings[]=
 	"General Information:\n"
 	"-------------------\n"
 	"		   HDF5 Version: 1.8.15-patch1\n"
-	"		  Configured on: Tue Nov 10 03:14:30 UTC 2015\n"
-	"		  Configured by: aballmer@n00.ftm.alcf.anl.gov\n"
+	"		  Configured on: Tue Nov 17 00:35:29 UTC 2015\n"
+	"		  Configured by: aballmer@n00\n"
 	"		 Configure mode: production\n"
 	"		    Host system: x86_64-unknown-linux-gnu\n"
-	"	      Uname information: Linux n00.ftm.alcf.anl.gov 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n"
+	"	      Uname information: Linux n00 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n"
 	"		       Byte sex: little-endian\n"
 	"		      Libraries: static, shared\n"
 	"	     Installation point: /home/aballmer/SCC15HPCRepast/ext//hdf5\n"

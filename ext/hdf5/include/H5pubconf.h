@@ -21,6 +21,9 @@
 /* Define the default plugins path to compile */
 #define H5_DEFAULT_PLUGINDIR "/usr/local/hdf5/lib/plugin"
 
+/* Define the default virtual file driver to compile */
+#define H5_DEFAULT_VFD H5FD_SEC2
+
 /* Define if `dev_t' is a scalar */
 #define H5_DEV_T_IS_SCALAR 1
 
@@ -42,14 +45,25 @@
    integer values. */
 #define H5_FP_TO_INTEGER_OVERFLOW_WORKS 1
 
+/* Define if your system roundup accurately converting floating-point to
+   unsigned long long values. */
+#define H5_FP_TO_ULLONG_ACCURATE 1
+
+/* Define if your system has right maximum convert floating-point to unsigned
+   long long values. */
+#define H5_FP_TO_ULLONG_RIGHT_MAXIMUM 1
+
+/* Define if gettimeofday() populates the tz pointer passed in */
+#define H5_GETTIMEOFDAY_GIVES_TZ 1
+
 /* Define to 1 if you have the `alarm' function. */
 #define H5_HAVE_ALARM 1
 
-/* Define to 1 if you have the `asprintf' function. */
-#define H5_HAVE_ASPRINTF 1
-
 /* Define if the __attribute__(()) extension is present */
 #define H5_HAVE_ATTRIBUTE 1
+
+/* Define to 1 if you have the `BSDgettimeofday' function. */
+/* #undef H5_HAVE_BSDGETTIMEOFDAY */
 
 /* Define if the compiler understands C99 designated initialization of structs
    and unions */
@@ -67,10 +81,14 @@
 /* Define if Darwin or Mac OS X */
 /* #undef H5_HAVE_DARWIN */
 
+/* Define to 1 if you have the declaration of `tzname', and to 0 if you don't.
+   */
+/* #undef H5_HAVE_DECL_TZNAME */
+
 /* Define to 1 if you have the `difftime' function. */
 #define H5_HAVE_DIFFTIME 1
 
-/* Define if the direct I/O virtual file driver (VFD) should be compiled */
+/* Define if the direct I/O virtual file driver should be compiled */
 /* #undef H5_HAVE_DIRECT */
 
 /* Define to 1 if you have the <dirent.h> header file. */
@@ -90,6 +108,18 @@
 
 /* Define if support for deflate (zlib) filter is enabled */
 #define H5_HAVE_FILTER_DEFLATE 1
+
+/* Define if support for Fletcher32 checksum is enabled */
+#define H5_HAVE_FILTER_FLETCHER32 1
+
+/* Define if support for nbit filter is enabled */
+#define H5_HAVE_FILTER_NBIT 1
+
+/* Define if support for scaleoffset filter is enabled */
+#define H5_HAVE_FILTER_SCALEOFFSET 1
+
+/* Define if support for shuffle filter is enabled */
+#define H5_HAVE_FILTER_SHUFFLE 1
 
 /* Define if support for szip filter is enabled */
 /* #undef H5_HAVE_FILTER_SZIP */
@@ -164,11 +194,23 @@
 /* Define to 1 if you have the `dmalloc' library (-ldmalloc). */
 /* #undef H5_HAVE_LIBDMALLOC */
 
+/* Define to 1 if you have the `lmpe' library (-llmpe). */
+/* #undef H5_HAVE_LIBLMPE */
+
 /* Define to 1 if you have the `m' library (-lm). */
 #define H5_HAVE_LIBM 1
 
 /* Define to 1 if you have the `mpe' library (-lmpe). */
 /* #undef H5_HAVE_LIBMPE */
+
+/* Define to 1 if you have the `mpi' library (-lmpi). */
+/* #undef H5_HAVE_LIBMPI */
+
+/* Define to 1 if you have the `mpich' library (-lmpich). */
+/* #undef H5_HAVE_LIBMPICH */
+
+/* Define to 1 if you have the `mpio' library (-lmpio). */
+/* #undef H5_HAVE_LIBMPIO */
 
 /* Define to 1 if you have the `nsl' library (-lnsl). */
 /* #undef H5_HAVE_LIBNSL */
@@ -208,6 +250,9 @@
 
 /* Define to 1 if you have the <mpe.h> header file. */
 /* #undef H5_HAVE_MPE_H */
+
+/* Define if MPI_File_get_size works correctly */
+#define H5_HAVE_MPI_GET_SIZE 1
 
 /* Define if `MPI_Comm_c2f' and `MPI_Comm_f2c' exists */
 /* #undef H5_HAVE_MPI_MULTI_LANG_Comm */
@@ -281,6 +326,12 @@
 /* Define if `struct text_info' is defined */
 /* #undef H5_HAVE_STRUCT_TEXT_INFO */
 
+/* Define if `struct timezone' is defined */
+#define H5_HAVE_STRUCT_TIMEZONE 1
+
+/* Define to 1 if `tm_zone' is a member of `struct tm'. */
+#define H5_HAVE_STRUCT_TM_TM_ZONE 1
+
 /* Define if `struct videoconfig' is defined */
 /* #undef H5_HAVE_STRUCT_VIDEOCONFIG */
 
@@ -327,7 +378,7 @@
 /* #undef H5_HAVE_THREADSAFE */
 
 /* Define if `timezone' is a global variable */
-#define H5_HAVE_TIMEZONE 1
+/* #undef H5_HAVE_TIMEZONE */
 
 /* Define if the ioctl TIOCGETD is defined */
 #define H5_HAVE_TIOCGETD 1
@@ -340,6 +391,14 @@
 
 /* Define if `tm_gmtoff' is a member of `struct tm' */
 #define H5_HAVE_TM_GMTOFF 1
+
+/* Define to 1 if your `struct tm' has `tm_zone'. Deprecated, use
+   `HAVE_STRUCT_TM_TM_ZONE' instead. */
+#define H5_HAVE_TM_ZONE 1
+
+/* Define to 1 if you don't have `tm_zone' but do have the external array
+   `tzname'. */
+/* #undef H5_HAVE_TZNAME */
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define H5_HAVE_UNISTD_H 1
@@ -368,12 +427,25 @@
 /* Define to 1 if you have the `_scrsize' function. */
 /* #undef H5_HAVE__SCRSIZE */
 
+/* Define if `__tm_gmtoff' is a member of `struct tm' */
+/* #undef H5_HAVE___TM_GMTOFF */
+
 /* Define if your system can't handle converting floating-point values to long
    long. */
 /* #undef H5_HW_FP_TO_LLONG_NOT_WORKS */
 
 /* Define if HDF5's high-level library headers should be included in hdf5.h */
 #define H5_INCLUDE_HL 1
+
+/* Define if your system can accurately convert from integers to long double
+   values. */
+#define H5_INTEGER_TO_LDOUBLE_ACCURATE 1
+
+/* Define if your system can convert long double to integers accurately. */
+#define H5_LDOUBLE_TO_INTEGER_ACCURATE 1
+
+/* Define if your system can convert from long double to integer values. */
+#define H5_LDOUBLE_TO_INTEGER_WORKS 1
 
 /* Define if your system can convert long double to (unsigned) long long
    values correctly. */
@@ -382,6 +454,13 @@
 /* Define if your system converts long double to (unsigned) long values with
    special algorithm. */
 /* #undef H5_LDOUBLE_TO_LONG_SPECIAL */
+
+/* Define if your system can convert long double to unsigned int values
+   correctly. */
+#define H5_LDOUBLE_TO_UINT_ACCURATE 1
+
+/* Define if your system can compile long long to floating-point casts. */
+#define H5_LLONG_TO_FP_CAST_WORKS 1
 
 /* Define if your system can convert (unsigned) long long to long double
    values correctly. */
@@ -398,11 +477,18 @@
 /* Define if the metadata trace file code is to be compiled in */
 /* #undef H5_METADATA_TRACE_FILE */
 
+/* Define if your system's `MPI_File_set_size' function works for files over
+   2GB. */
+#define H5_MPI_FILE_SET_SIZE_BIG 1
+
 /* Define if we can violate pointer alignment restrictions */
 #define H5_NO_ALIGNMENT_RESTRICTIONS 1
 
 /* Define if deprecated public API symbols are disabled */
 /* #undef H5_NO_DEPRECATED_SYMBOLS */
+
+/* Define if shared writing must be disabled (CodeWarrior only) */
+/* #undef H5_NO_SHARED_WRITING */
 
 /* Name of package */
 #define H5_PACKAGE "hdf5"
@@ -414,7 +500,7 @@
 #define H5_PACKAGE_NAME "HDF5"
 
 /* Define to the full name and version of this package. */
-#define H5_PACKAGE_STRING "HDF5 1.8.15-patch1"
+#define H5_PACKAGE_STRING "HDF5 1.8.13"
 
 /* Define to the one symbol short name of this package. */
 #define H5_PACKAGE_TARNAME "hdf5"
@@ -423,7 +509,7 @@
 #define H5_PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define H5_PACKAGE_VERSION "1.8.15-patch1"
+#define H5_PACKAGE_VERSION "1.8.13"
 
 /* Width for printf() for type `long long' or `__int64', use `ll' */
 #define H5_PRINTF_LL_WIDTH "l"
@@ -558,6 +644,25 @@
 /* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
 #define H5_TIME_WITH_SYS_TIME 1
 
+/* Define to 1 if your <sys/time.h> declares `struct tm'. */
+/* #undef H5_TM_IN_SYS_TIME */
+
+/* Define if your system can compile unsigned long long to floating-point
+   casts. */
+#define H5_ULLONG_TO_FP_CAST_WORKS 1
+
+/* Define if your system can convert unsigned long long to long double with
+   correct precision. */
+#define H5_ULLONG_TO_LDOUBLE_PRECISION 1
+
+/* Define if your system accurately converting unsigned long to float values.
+   */
+#define H5_ULONG_TO_FLOAT_ACCURATE 1
+
+/* Define if your system can accurately convert unsigned (long) long values to
+   floating-point values. */
+#define H5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE 1
+
 /* Define using v1.6 public API symbols by default */
 /* #undef H5_USE_16_API_DEFAULT */
 
@@ -567,7 +672,11 @@
 /* #undef H5_USING_MEMCHECKER */
 
 /* Version number of package */
-#define H5_VERSION "1.8.15-patch1"
+#define H5_VERSION "1.8.13"
+
+/* Define if vsnprintf() returns the correct value for formatted strings that
+   don't fit into size allowed */
+#define H5_VSNPRINTF_WORKS 1
 
 /* Data accuracy is prefered to speed during data conversions */
 #define H5_WANT_DATA_ACCURACY 1

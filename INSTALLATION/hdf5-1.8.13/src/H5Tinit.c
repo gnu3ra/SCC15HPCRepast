@@ -17,8 +17,8 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Oct 14, 2015
- *			aballmer@n00.localdomain
+ * Created:		Nov 17, 2015
+ *			aballmer@n00
  *
  * Purpose:		This machine-generated source code contains
  *			information about the various integer and

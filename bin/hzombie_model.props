@@ -13,8 +13,8 @@ max.y = 7
 grid.buffer = 2
 
 # these must multiply to total number of processes
-proc.per.x = 16
-proc.per.y = 8
+proc.per.x = 2
+proc.per.y = 2
 
 # population input/output files
 human.input.file = human.h5

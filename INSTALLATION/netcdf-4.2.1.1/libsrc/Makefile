@@ -50,7 +50,7 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/lib_flags.am
-am__append_1 = -I${top_srcdir}/oc
+#am__append_1 = -I${top_srcdir}/oc
 
 # This turns on declspec magic in netcdf.h for windows DLLs.
 #am__append_2 = -DDLL_NETCDF
@@ -65,7 +65,7 @@ am__append_4 = memio.c
 #am__append_6 = ffio.c
 am__append_7 = posixio.c
 #am__append_8 = -DNETCDF4=TRUE
-am__append_9 = -DDAP=TRUE
+#am__append_9 = -DDAP=TRUE
 #am__append_10 = -DPARALLEL_IO=TRUE
 subdir = libsrc
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -172,7 +172,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = yes
+HAS_DAP = no
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -187,7 +187,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm -lz -lcurl 
+LIBS = -lm 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s

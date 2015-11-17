@@ -1,0 +1,71 @@
+# number of iterations
+#
+stop.at = 100
+
+# World definition props
+#
+# The followings defines a world as a grid of 360 x 720 cells.
+# Each dimension should start from 0
+# That is, for x-axis: (0, 719)
+#          for y-axis: (0, 359)
+#
+min.x = 0
+min.y = 0
+max.x = 719
+max.y = 359
+
+# this can be either 1 or 2.
+# No need to modify
+#
+grid.buffer = 2
+
+
+# The number of proccesses assigned to X and Y dimension.
+#
+# Each dimension size should be a multiple of processes
+# assigned to it.
+# Ex) 720 = 36 x 20, ...
+#     360 = 18 x 20, ...
+#
+# proc.per.x = 36
+# proc.per.y = 18
+#   ...
+# proc.per.x = 36
+# proc.per.y = 20
+#   ...
+#
+# proc.per.x X proc.per.y must be the total number of mpi processes.
+#
+#288 procs
+proc.per.x = 18
+proc.per.y = 9
+
+# population input/output files
+#
+# Either absolute or relative path to files can be used.
+# The followings assume human population input data "human.h5"
+# are placed in a dictory called "data" that is located one level up.
+# Also output data will be created into the same directory.
+#
+human.input.file = landscan_sc_human_10000.h5
+human.output.file = landscan_human10000_out.h5
+
+# Do not touch this. This is the data name given to input files.
+human.dataname = human_population
+
+
+# Similar to the above, the same set of configuration for zombie input/output.
+#
+zombie.input.file = landscan_sc_zombie_10000.h5
+zombie.output.file = landscan_zombie10000_out.h5
+zombie.dataname = zombie_population
+
+# output frequency
+# This controls how often user wants to record human and zombie counts
+# at each cell into the output files.
+#
+output.interval = 10
+
+# named random number distributions
+# No need to modify this
+distribution.zombie_move = int_uniform, 0, 2

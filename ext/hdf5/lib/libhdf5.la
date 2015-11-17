@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libhdf5.so.10'
+dlname=''
 
 # Names of this library.
-library_names='libhdf5.so.10.0.1 libhdf5.so.10 libhdf5.so'
+library_names=''
 
 # The name of the static archive.
 old_library='libhdf5.a'
@@ -23,9 +23,9 @@ dependency_libs=' -lz -ldl -lm'
 weak_library_names=''
 
 # Version information for libhdf5.
-current=10
+current=8
 age=0
-revision=1
+revision=2
 
 # Is this an already installed library?
 installed=yes
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/aballmer/SCC15HPCRepast/ext//hdf5/lib'
+libdir='/gpfs/iit-fs0/home/aballmer/SCC15HPCRepast/ext//hdf5/lib'

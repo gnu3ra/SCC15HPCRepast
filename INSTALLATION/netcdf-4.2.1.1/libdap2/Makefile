@@ -50,14 +50,14 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/lib_flags.am
-am__append_1 = -I${top_srcdir}/oc
+#am__append_1 = -I${top_srcdir}/oc
 
 # This turns on declspec magic in netcdf.h for windows DLLs.
 #am__append_2 = -DDLL_NETCDF
 
 #SRC += cdf4.c constraints4.c ncd4dispatch.c ncdap4.c getvara4.c
 #HDRS +=constraints4.h ncd4dispatch.h ncdap4.h
-#am__append_3 = -I$(top_srcdir)/libsrc4
+##am__append_3 = -I$(top_srcdir)/libsrc4
 subdir = libdap2
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
@@ -90,10 +90,10 @@ am__objects_1 = libdap2_la-constraints3.lo libdap2_la-common34.lo \
 	libdap2_la-dcetab.lo libdap2_la-dceparse.lo \
 	libdap2_la-dcelex.lo
 am__objects_2 =
-am_libdap2_la_OBJECTS = $(am__objects_1) \
-	$(am__objects_2)
+#am_libdap2_la_OBJECTS = $(am__objects_1) \
+#	$(am__objects_2)
 libdap2_la_OBJECTS = $(am_libdap2_la_OBJECTS)
-am_libdap2_la_rpath =
+#am_libdap2_la_rpath =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -143,7 +143,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = yes
+HAS_DAP = no
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -158,7 +158,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm -lz -lcurl 
+LIBS = -lm 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
@@ -280,10 +280,10 @@ dceconstraints.h dcetab.h dceparselex.h
 
 
 # Build convenience library
-noinst_LTLIBRARIES = libdap2.la
-libdap2_la_SOURCES = $(SRC) $(HDRS)
-libdap2_la_CPPFLAGS = $(AM_CPPFLAGS)
-libdap2_la_LIBADD = 
+#noinst_LTLIBRARIES = libdap2.la
+#libdap2_la_SOURCES = $(SRC) $(HDRS)
+#libdap2_la_CPPFLAGS = $(AM_CPPFLAGS)
+#libdap2_la_LIBADD = 
 all: all-am
 
 .SUFFIXES:

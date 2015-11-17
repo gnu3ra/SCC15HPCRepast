@@ -17,8 +17,8 @@
  * access to either file, you may request a copy from help@hdfgroup.org.     *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
- * Created:		Nov  6, 2015
- *			aballmer@n00.localdomain
+ * Created:		Nov 10, 2015
+ *			aballmer@n00.ftm.alcf.anl.gov
  *
  * Purpose:		This machine-generated source code contains
  *			information about the library build configuration
@@ -38,19 +38,19 @@ char H5libhdf5_settings[]=
 	"General Information:\n"
 	"-------------------\n"
 	"		   HDF5 Version: 1.8.15-patch1\n"
-	"		  Configured on: Fri Nov  6 23:43:54 EST 2015\n"
-	"		  Configured by: aballmer@n00.localdomain\n"
+	"		  Configured on: Tue Nov 10 03:14:30 UTC 2015\n"
+	"		  Configured by: aballmer@n00.ftm.alcf.anl.gov\n"
 	"		 Configure mode: production\n"
 	"		    Host system: x86_64-unknown-linux-gnu\n"
-	"	      Uname information: Linux n00.localdomain 3.10.0-229.el7.x86_64 #1 SMP Fri Mar 6 11:36:42 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n"
+	"	      Uname information: Linux n00.ftm.alcf.anl.gov 3.10.0-229.20.1.el7.x86_64 #1 SMP Tue Nov 3 19:10:07 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux\n"
 	"		       Byte sex: little-endian\n"
 	"		      Libraries: static, shared\n"
-	"	     Installation point: /home/aballmer/new/SCC15HPCRepast/ext/hdf5\n"
+	"	     Installation point: /home/aballmer/SCC15HPCRepast/ext//hdf5\n"
 	"\n"
 	"Compiling Options:\n"
 	"------------------\n"
 	"               Compilation Mode: production\n"
-	"                     C Compiler: /home/aballmer/new/SCC15HPCRepast/ext/MPICH/bin//mpicc ( MPICH2 version 1.4.1p1 built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))\n"
+	"                     C Compiler: /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/bin/mpicc ( built with gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC))\n"
 	"                         CFLAGS: \n"
 	"                      H5_CFLAGS: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Winline -Wfloat-equal -Wmissing-format-attribute -Wmissing-noreturn -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wstrict-overflow -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wsuggest-attribute=const -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wsuggest-attribute=pure -Wsuggest-attribute=noreturn -Wsuggest-attribute=format -O3 -fomit-frame-pointer -finline-functions\n"
 	"                      AM_CFLAGS: \n"

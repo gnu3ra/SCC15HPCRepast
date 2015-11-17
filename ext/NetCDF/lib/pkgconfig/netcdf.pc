@@ -1,8 +1,8 @@
-prefix=/home/aballmer/new/SCC15HPCRepast/ext//NetCDF
+prefix=/home/aballmer/SCC15HPCRepast/ext//NetCDF
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-ccompiler=gcc
+ccompiler=icc
 
 Name: netcdf
 Description: NetCDF Client Library for C

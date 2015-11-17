@@ -17,7 +17,7 @@ old_library='libnetcdf_c++.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib /home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib/libnetcdf.la -ldl'
+dependency_libs=' -L/home/aballmer/SCC15HPCRepast/ext//NetCDF/lib /home/aballmer/SCC15HPCRepast/ext//NetCDF/lib/libnetcdf.la -lz -lcurl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/aballmer/new/SCC15HPCRepast/ext//NetCDF/lib'
+libdir='/home/aballmer/SCC15HPCRepast/ext//NetCDF/lib'

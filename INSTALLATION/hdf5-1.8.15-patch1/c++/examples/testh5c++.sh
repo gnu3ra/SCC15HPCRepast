@@ -28,7 +28,7 @@ EXIT_FAILURE=1
 
 # Where the tool is installed.
 # Note: no '/' after DESTDIR.  Explanation in commence.am
-prefix="${prefix:-${DESTDIR}/home/aballmer/new/SCC15HPCRepast/ext/hdf5}"
+prefix="${prefix:-${DESTDIR}/home/aballmer/SCC15HPCRepast/ext//hdf5}"
 AR="ar"
 RANLIB="ranlib"
 H5TOOL="h5c++"           	# The tool name

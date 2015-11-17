@@ -50,14 +50,14 @@ host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in \
 	$(top_srcdir)/lib_flags.am
-#am__append_1 = -I${top_srcdir}/oc
+am__append_1 = -I${top_srcdir}/oc
 
 # This turns on declspec magic in netcdf.h for windows DLLs.
 #am__append_2 = -DDLL_NETCDF
 
 #SRC += cdf4.c constraints4.c ncd4dispatch.c ncdap4.c getvara4.c
 #HDRS +=constraints4.h ncd4dispatch.h ncdap4.h
-##am__append_3 = -I$(top_srcdir)/libsrc4
+#am__append_3 = -I$(top_srcdir)/libsrc4
 subdir = libdap2
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
@@ -90,10 +90,10 @@ am__objects_1 = libdap2_la-constraints3.lo libdap2_la-common34.lo \
 	libdap2_la-dcetab.lo libdap2_la-dceparse.lo \
 	libdap2_la-dcelex.lo
 am__objects_2 =
-#am_libdap2_la_OBJECTS = $(am__objects_1) \
-#	$(am__objects_2)
+am_libdap2_la_OBJECTS = $(am__objects_1) \
+	$(am__objects_2)
 libdap2_la_OBJECTS = $(am_libdap2_la_OBJECTS)
-#am_libdap2_la_rpath =
+am_libdap2_la_rpath =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -112,21 +112,21 @@ DIST_SOURCES = $(am__libdap2_la_SOURCES_DIST)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run aclocal-1.11
 ALLOCA = 
-AMTAR = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run tar
+AMTAR = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run automake-1.11
 AWK = gawk
 BINFILE_NAME = binary-netcdf-4.2.1.1_nc3.tar
 BUILD_INTERNAL_DOCS = no
-CC = gcc
+CC = icc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CPP = gcc -E
+CPP = icc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -143,7 +143,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -158,12 +158,12 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
 NC_LIBS = -lnetcdf
@@ -187,12 +187,12 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = strip
 VERSION = 4.2.1.1
-abs_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/libdap2
-abs_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/libdap2
-abs_top_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
-abs_top_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
+abs_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/libdap2
+abs_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/libdap2
+abs_top_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
+abs_top_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
 ac_ct_AR = ar
-ac_ct_CC = gcc
+ac_ct_CC = icc
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
@@ -219,7 +219,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/install-sh
+install_sh = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -228,7 +228,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /usr/bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/aballmer/new/SCC15HPCRepast/ext//NetCDF
+prefix = /home/aballmer/SCC15HPCRepast/ext//NetCDF
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -280,10 +280,10 @@ dceconstraints.h dcetab.h dceparselex.h
 
 
 # Build convenience library
-#noinst_LTLIBRARIES = libdap2.la
-#libdap2_la_SOURCES = $(SRC) $(HDRS)
-#libdap2_la_CPPFLAGS = $(AM_CPPFLAGS)
-#libdap2_la_LIBADD = 
+noinst_LTLIBRARIES = libdap2.la
+libdap2_la_SOURCES = $(SRC) $(HDRS)
+libdap2_la_CPPFLAGS = $(AM_CPPFLAGS)
+libdap2_la_LIBADD = 
 all: all-am
 
 .SUFFIXES:

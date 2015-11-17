@@ -18,11 +18,11 @@ H5B2int.lo: H5B2int.c /usr/include/stdc-predef.h H5private.h H5public.h \
  /usr/include/bits/stdio_lim.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/inttypes.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpio.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h H5api_adpt.h \
- /usr/include/assert.h /usr/include/ctype.h /usr/include/xlocale.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpio.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h \
+ H5api_adpt.h /usr/include/assert.h /usr/include/ctype.h \
+ /usr/include/xlocale.h /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
@@ -140,11 +140,11 @@ H5version.h:
 
 /usr/include/inttypes.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpio.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpio.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h:
 
 H5api_adpt.h:
 

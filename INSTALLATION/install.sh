@@ -71,7 +71,7 @@ then
   mkdir $BASE_DIR/NetCDF
   tar -xvf netcdf-4.2.1.1.tar.gz
   cd netcdf-4.2.1.1
-  ./configure --disable-netcdf-4 --prefix=$BASE_DIR/NetCDF
+  ./configure --disable-netcdf-4 --prefix=$BASE_DIR/NetCDF CC=icc
   make
   make install
   cd ..
@@ -87,7 +87,7 @@ then
     fi 
     tar -xvf netcdf-cxx-4.2.tar.gz
     cd netcdf-cxx-4.2
-    env CPPFLAGS=-I$BASE_DIR/NetCDF/include LDFLAGS=-L$BASE_DIR/NetCDF/lib LIBS=-ldl ./configure --prefix=$BASE_DIR/NetCDF
+    env CPPFLAGS=-I$BASE_DIR/NetCDF/include LDFLAGS=-L$BASE_DIR/NetCDF/lib LIBS=-ldl ./configure --prefix=$BASE_DIR/NetCDF CXX=icpc CC=icc
     make
     make install
     cd ..
@@ -109,9 +109,9 @@ fi
     fi 
     tar -xvf hdf5-1.8.15-patch1.tar.gz
     cd hdf5-1.8.15-patch1
-   ./configure --prefix=$BASE_DIR/hdf5 --enable-parallel 
+./configure --prefix=$BASE_DIR/hdf5 --enable-parallel
    sleep 1
-   make
+   make -j 64
    make install
     cd ..
   fi
@@ -137,7 +137,7 @@ if [ -e $BASE_DIR/Boost ]
   cd boost_1_54_0
   ./bootstrap.sh --prefix=$BASE_DIR/Boost/Boost_1.54/ --with-libraries=system,filesystem,mpi,serialization
   echo "using mpi : $MPI_COMPILER_INVOCATION ;" >>./tools/build/v2/user-config.jam
-  ./b2 --layout=tagged variant=release threading=multi stage install
+  ./b2 --layout=tagged variant=release threading=multi address-model=64 toolset=intel stage install
   cd ..
 fi
 

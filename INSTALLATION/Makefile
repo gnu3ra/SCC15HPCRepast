@@ -1,8 +1,8 @@
 # Repast HPC Manual Build Makefile
 
 # VARIABLES (Supply values for these; for definitions and examples, see INSTALL)
-CXX=g++
-CXXLD=g++
+CXX=icpc
+CXXLD=icpc
 BOOST_INCLUDE_DIR=boost/include
 BOOST_LIB_DIR=boost/lib
 BOOST_INFIX=-mt-s

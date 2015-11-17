@@ -76,10 +76,10 @@ am__objects_1 = liboc_la-occurlfunctions.lo liboc_la-dapparse.lo \
 	liboc_la-occlientparams.lo liboc_la-ocrc.lo liboc_la-ocread.lo \
 	liboc_la-xxdr.lo liboc_la-daptab.lo
 am__objects_2 =
-#am_liboc_la_OBJECTS = $(am__objects_1) \
-#	$(am__objects_2)
+am_liboc_la_OBJECTS = $(am__objects_1) \
+	$(am__objects_2)
 liboc_la_OBJECTS = $(am_liboc_la_OBJECTS)
-#am_liboc_la_rpath =
+am_liboc_la_rpath =
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -98,21 +98,21 @@ DIST_SOURCES = $(am__liboc_la_SOURCES_DIST)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run aclocal-1.11
 ALLOCA = 
-AMTAR = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run tar
+AMTAR = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run tar
 AR = ar
 AS = as
-AUTOCONF = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run automake-1.11
 AWK = gawk
 BINFILE_NAME = binary-netcdf-4.2.1.1_nc3.tar
 BUILD_INTERNAL_DOCS = no
-CC = gcc
+CC = icc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CPP = gcc -E
+CPP = icc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -129,7 +129,7 @@ EXEEXT =
 FGREP = /usr/bin/grep -F
 FTPBINDIR = /home/ftp/pub/binary/dummy_system
 GREP = /usr/bin/grep
-HAS_DAP = no
+HAS_DAP = yes
 HAS_HDF4 = no
 HAS_HDF5 = no
 HAS_NC2 = yes
@@ -144,12 +144,12 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lm 
+LIBS = -lm -lz -lcurl 
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
 NC_LIBS = -lnetcdf
@@ -173,12 +173,12 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = strip
 VERSION = 4.2.1.1
-abs_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/oc
-abs_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/oc
-abs_top_builddir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
-abs_top_srcdir = /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
+abs_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/oc
+abs_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/oc
+abs_top_builddir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
+abs_top_srcdir = /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1
 ac_ct_AR = ar
-ac_ct_CC = gcc
+ac_ct_CC = icc
 ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
@@ -205,7 +205,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/aballmer/new/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/install-sh
+install_sh = ${SHELL} /home/aballmer/SCC15HPCRepast/INSTALLATION/netcdf-4.2.1.1/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -214,7 +214,7 @@ mandir = ${datarootdir}/man
 mkdir_p = /usr/bin/mkdir -p
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /home/aballmer/new/SCC15HPCRepast/ext//NetCDF
+prefix = /home/aballmer/SCC15HPCRepast/ext//NetCDF
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -245,9 +245,9 @@ ocinternal.h oclist.h oclog.h ocnode.h occlientparams.h ocutil.h ocrc.h	\
 ocread.h xxdr.h daptab.h \
 oc.h
 
-#noinst_LTLIBRARIES = liboc.la
-#liboc_la_SOURCES = $(SRC) $(HDRS) 
-#liboc_la_CPPFLAGS = $(AM_CPPFLAGS)
+noinst_LTLIBRARIES = liboc.la
+liboc_la_SOURCES = $(SRC) $(HDRS) 
+liboc_la_CPPFLAGS = $(AM_CPPFLAGS)
 all: all-am
 
 .SUFFIXES:

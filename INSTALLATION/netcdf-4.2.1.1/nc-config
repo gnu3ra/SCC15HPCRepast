@@ -4,15 +4,15 @@
 # various things about the netCDF installation. This code was
 # contributed by netCDF user Arlindo DaSilva. Thanks Arlindo!
 
-prefix=/home/aballmer/new/SCC15HPCRepast/ext//NetCDF
+prefix=/home/aballmer/SCC15HPCRepast/ext//NetCDF
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-cc="gcc"
+cc="icc"
 cflags=" -I${includedir} " 
 libs="-L${libdir} -lnetcdf"
-has_dap="no"
+has_dap="yes"
 has_nc2="yes"
 has_nc4="no"
 has_hdf4="no"

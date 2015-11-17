@@ -19,9 +19,9 @@ big.o: big.c /usr/include/stdc-predef.h h5test.h ../src/hdf5.h \
  /usr/include/bits/stdio_lim.h \
  /usr/lib/gcc/x86_64-redhat-linux/4.8.3/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/inttypes.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpio.h \
- /home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpio.h \
+ /opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h \
  ../src/H5api_adpt.h ../src/H5Apublic.h ../src/H5Ipublic.h \
  ../src/H5Opublic.h ../src/H5Lpublic.h ../src/H5Tpublic.h \
  ../src/H5ACpublic.h ../src/H5Cpublic.h ../src/H5Dpublic.h \
@@ -147,11 +147,11 @@ h5test.h:
 
 /usr/include/inttypes.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpio.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpio.h:
 
-/home/aballmer/new/SCC15HPCRepast/ext//MPICH/include/mpi.h:
+/opt/intel/compilers_and_libraries_2016.0.109/linux/mpi/intel64/include/mpi.h:
 
 ../src/H5api_adpt.h:
 

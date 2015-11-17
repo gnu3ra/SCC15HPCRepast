@@ -1,9 +1,9 @@
 # Directories...
-$prefix=/home/aballmer/new/SCC15HPCRepast/ext//CURL
+$prefix=/home/aballmer/SCC15HPCRepast/ext//CURL
 $exec_prefix=${prefix}
 $bindir=${exec_prefix}/bin
 $confdir=${prefix}/etc
-$docdir=/home/aballmer/new/SCC15HPCRepast/ext//CURL/doc
+$docdir=/home/aballmer/SCC15HPCRepast/ext//CURL/doc
 $mandir=${datarootdir}/man
 $libdir=${exec_prefix}/lib
 $srcdir=../..

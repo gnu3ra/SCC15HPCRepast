@@ -32,7 +32,7 @@ EXIT_FAILURE=1
 
 # Where the tool is installed.
 # Note: no '/' after DESTDIR.  Explanation in commence.am
-prefix="${prefix:-${DESTDIR}/home/aballmer/new/SCC15HPCRepast/ext/hdf5}"
+prefix="${prefix:-${DESTDIR}/home/aballmer/SCC15HPCRepast/ext//hdf5}"
 PARALLEL=yes		# Am I in parallel mode?
 AR="ar"
 RANLIB="ranlib"
